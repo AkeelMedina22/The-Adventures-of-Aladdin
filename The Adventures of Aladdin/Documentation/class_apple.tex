@@ -1,0 +1,128 @@
+\hypertarget{class_apple}{}\doxysection{Apple Class Reference}
+\label{class_apple}\index{Apple@{Apple}}
+
+
+This class inherits from the Obstalces class. It is one of the two static objects which interact with the \mbox{\hyperlink{class_player}{Player}}. The specific function of this object is related to the health of the \mbox{\hyperlink{class_player}{Player}}.  
+
+
+
+
+{\ttfamily \#include $<$apple.\+hpp$>$}
+
+Inheritance diagram for Apple\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_apple}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_apple_a3d511c152017631d837702200ff89fb0}{Apple}} (S\+D\+L\+\_\+\+Texture $\ast$asst)
+\item 
+void \mbox{\hyperlink{class_apple_a78b3c54afdf9df7bf3d008a842b238e8}{draw}} (S\+D\+L\+\_\+\+Renderer $\ast$g\+Renderer)
+\item 
+void \mbox{\hyperlink{class_apple_acccfb814c2eb3790c5d45c32218e3d79}{move}} (S\+D\+L\+\_\+\+Renderer\+Flip flip, bool flag3)
+\item 
+char \mbox{\hyperlink{class_apple_a4f01b74f9f9537b6819b3bee4438ea01}{name}} ()
+\item 
+void \mbox{\hyperlink{class_apple_a8c69e0aace2141f791e91de527d122ba}{set\+Move}} (int x)
+\item 
+void \mbox{\hyperlink{class_apple_af3ab35aaa389b71d8459950a2cabb9d2}{create\+Out\+File}} (std\+::ostream \&myfile)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class inherits from the Obstalces class. It is one of the two static objects which interact with the \mbox{\hyperlink{class_player}{Player}}. The specific function of this object is related to the health of the \mbox{\hyperlink{class_player}{Player}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_apple_a3d511c152017631d837702200ff89fb0}\label{class_apple_a3d511c152017631d837702200ff89fb0}} 
+\index{Apple@{Apple}!Apple@{Apple}}
+\index{Apple@{Apple}!Apple@{Apple}}
+\doxysubsubsection{\texorpdfstring{Apple()}{Apple()}}
+{\footnotesize\ttfamily Apple\+::\+Apple (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{asst }\end{DoxyParamCaption})}
+
+This is the constructor for the \mbox{\hyperlink{class_apple}{Apple}} class. 
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Texture$\ast$} & which is basically the asset file passed from the game.\+cpp. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_apple_af3ab35aaa389b71d8459950a2cabb9d2}\label{class_apple_af3ab35aaa389b71d8459950a2cabb9d2}} 
+\index{Apple@{Apple}!createOutFile@{createOutFile}}
+\index{createOutFile@{createOutFile}!Apple@{Apple}}
+\doxysubsubsection{\texorpdfstring{createOutFile()}{createOutFile()}}
+{\footnotesize\ttfamily void Apple\+::create\+Out\+File (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{myfile }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This functions writes the type, health integer value and integer x-\/coordinate to our save file. 
+\begin{DoxyParams}{Parameters}
+{\em myfile} & is the ostream object passed by reference from game.\+cpp when creating the save file. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_obstacles_a2c94b68a02fe45083d7d5f658bad165c}{Obstacles}}.
+
+\mbox{\Hypertarget{class_apple_a78b3c54afdf9df7bf3d008a842b238e8}\label{class_apple_a78b3c54afdf9df7bf3d008a842b238e8}} 
+\index{Apple@{Apple}!draw@{draw}}
+\index{draw@{draw}!Apple@{Apple}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Apple\+::draw (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{g\+Renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This draw function renders the \mbox{\hyperlink{class_apple}{Apple}} object on the screen. 
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Renderer$\ast$} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_obstacles_af65a283f290979775db608b971970481}{Obstacles}}.
+
+\mbox{\Hypertarget{class_apple_acccfb814c2eb3790c5d45c32218e3d79}\label{class_apple_acccfb814c2eb3790c5d45c32218e3d79}} 
+\index{Apple@{Apple}!move@{move}}
+\index{move@{move}!Apple@{Apple}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Apple\+::move (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer\+Flip}]{flip,  }\item[{bool}]{flag3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function moves the \mbox{\hyperlink{class_apple}{Apple}} object onto the screen when appropiate. When the \mbox{\hyperlink{class_player}{Player}} is moving to the right the \mbox{\hyperlink{class_apple}{Apple}} is reducing the x value. When player is moving to the left, we are increasing the x value. 
+\begin{DoxyParams}{Parameters}
+{\em flip} & provides the class with the orientation of the player which is of type S\+D\+L\+\_\+\+Renderer\+Flip. \\
+\hline
+{\em flag3} & is a boolean that is toggled true when \mbox{\hyperlink{class_player}{Player}} is pressing the key down. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_obstacles_a944dbe10d9fe3061bb66e29455dfc01b}{Obstacles}}.
+
+\mbox{\Hypertarget{class_apple_a4f01b74f9f9537b6819b3bee4438ea01}\label{class_apple_a4f01b74f9f9537b6819b3bee4438ea01}} 
+\index{Apple@{Apple}!name@{name}}
+\index{name@{name}!Apple@{Apple}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily char Apple\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function provides us with the specific type of object. In this case an \mbox{\hyperlink{class_apple}{Apple}}. 
+
+Reimplemented from \mbox{\hyperlink{class_obstacles_ae0107937f92255fd3113ac2d645a7a54}{Obstacles}}.
+
+\mbox{\Hypertarget{class_apple_a8c69e0aace2141f791e91de527d122ba}\label{class_apple_a8c69e0aace2141f791e91de527d122ba}} 
+\index{Apple@{Apple}!setMove@{setMove}}
+\index{setMove@{setMove}!Apple@{Apple}}
+\doxysubsubsection{\texorpdfstring{setMove()}{setMove()}}
+{\footnotesize\ttfamily void Apple\+::set\+Move (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function sets the integer x cooridinate of the \mbox{\hyperlink{class_apple}{Apple}} when loading from save file. 
+
+Reimplemented from \mbox{\hyperlink{class_obstacles_a58a96d81c80911491b2033cd96a1fc0f}{Obstacles}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/akeel/\+One\+Drive/\+Desktop/finalfinalfinalfinalfinal/apple.\+hpp\item 
+C\+:/\+Users/akeel/\+One\+Drive/\+Desktop/finalfinalfinalfinalfinal/apple.\+cpp\end{DoxyCompactItemize}

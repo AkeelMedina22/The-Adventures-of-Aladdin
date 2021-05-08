@@ -1,0 +1,177 @@
+\hypertarget{class_player}{}\doxysection{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+
+
+This is the \mbox{\hyperlink{class_player}{Player}} class (i.\+e. Aladdin). This class is implemented using Singleton Design Pattern. Move\+Count is an integer tied to the movement animation of the \mbox{\hyperlink{class_player}{Player}}. Sword\+Count is an integer tied to the basic sword attack animation of the \mbox{\hyperlink{class_player}{Player}}. Ad\+Sword is an integer tied the advanced sword attack animation of the \mbox{\hyperlink{class_player}{Player}}. flip is a boolean variable which houses the orientation of the \mbox{\hyperlink{class_player}{Player}} which is of type S\+D\+L\+\_\+\+Renderer\+Flip.. hurt\+Count is an integer tied to the hurt animation of the \mbox{\hyperlink{class_player}{Player}}. celeb\+Count is an integer tied to the end game animation of the \mbox{\hyperlink{class_player}{Player}}.  
+
+
+
+
+{\ttfamily \#include $<$Player.\+hpp$>$}
+
+Inheritance diagram for Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_a0a6f9e0df03324c707be7439fdbcb89c}{Player}} (S\+D\+L\+\_\+\+Texture $\ast$asst)
+\item 
+void \mbox{\hyperlink{class_player_a742fa724b555f60555ca1c3d3303d12f}{Horizontal\+Move}} (bool move, int \&x, int \&px, S\+D\+L\+\_\+\+Renderer\+Flip flip)
+\item 
+void \mbox{\hyperlink{class_player_aaf4dfd871a0b731abcb0e1c960f39d4d}{Basic\+Sword}} ()
+\item 
+void \mbox{\hyperlink{class_player_ae330fb9ab659ecfd326a2c110bdd8e89}{Advanced\+Sword}} ()
+\item 
+void \mbox{\hyperlink{class_player_a3c77232f39fd78d602479a1bd623a483}{hurt}} ()
+\item 
+void \mbox{\hyperlink{class_player_a5ce1260f57b22ac890aef07593f17565}{draw}} (S\+D\+L\+\_\+\+Renderer $\ast$g\+Renderer, S\+D\+L\+\_\+\+Renderer\+Flip flip)
+\item 
+void \mbox{\hyperlink{class_player_ab36fdfbf2ed82fa16d1480a6b19d0b90}{reduce\+Health}} ()
+\item 
+void \mbox{\hyperlink{class_player_a9c1fb9600b401085a3a7543704c7895c}{celebration}} ()
+\item 
+void \mbox{\hyperlink{class_player_ac4546c6a542fad8f884c3db88b75d814}{state\+Reset}} ()
+\item 
+void \mbox{\hyperlink{class_player_a9d21df8dede041e5973426fcfe1d36f8}{state\+Load}} ()
+\item 
+void \mbox{\hyperlink{class_player_ae7a05ac43c2fd44472cd1172453fa5d6}{state\+Write}} ()
+\item 
+void \mbox{\hyperlink{class_player_a792761d5ad36a51e2691126ab2bfee18}{operator++}} ()
+\item 
+void \mbox{\hyperlink{class_player_a833210b036bbaf720c5993575988f683}{operator-\/-\/}} ()
+\item 
+void \mbox{\hyperlink{class_player_a145bcf5e09127dea9a2941fe68a62be0}{operator=}} (int \&apples\+Left)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_player_a17322a0ec2d0c70247c447a67a3acfe1}\label{class_player_a17322a0ec2d0c70247c447a67a3acfe1}} 
+static \mbox{\hyperlink{class_player}{Player}} $\ast$ {\bfseries get\+Instance} (S\+D\+L\+\_\+\+Texture $\ast$assets)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This is the \mbox{\hyperlink{class_player}{Player}} class (i.\+e. Aladdin). This class is implemented using Singleton Design Pattern. Move\+Count is an integer tied to the movement animation of the \mbox{\hyperlink{class_player}{Player}}. Sword\+Count is an integer tied to the basic sword attack animation of the \mbox{\hyperlink{class_player}{Player}}. Ad\+Sword is an integer tied the advanced sword attack animation of the \mbox{\hyperlink{class_player}{Player}}. flip is a boolean variable which houses the orientation of the \mbox{\hyperlink{class_player}{Player}} which is of type S\+D\+L\+\_\+\+Renderer\+Flip.. hurt\+Count is an integer tied to the hurt animation of the \mbox{\hyperlink{class_player}{Player}}. celeb\+Count is an integer tied to the end game animation of the \mbox{\hyperlink{class_player}{Player}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_player_a0a6f9e0df03324c707be7439fdbcb89c}\label{class_player_a0a6f9e0df03324c707be7439fdbcb89c}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{asst }\end{DoxyParamCaption})}
+
+This is the constructor for the \mbox{\hyperlink{class_player}{Player}} class. 
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Texture$\ast$} & this provides the asset sheet from game.\+cpp. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_ae330fb9ab659ecfd326a2c110bdd8e89}\label{class_player_ae330fb9ab659ecfd326a2c110bdd8e89}} 
+\index{Player@{Player}!AdvancedSword@{AdvancedSword}}
+\index{AdvancedSword@{AdvancedSword}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{AdvancedSword()}{AdvancedSword()}}
+{\footnotesize\ttfamily void Player\+::\+Advanced\+Sword (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function handles the advanced sword animation. \mbox{\Hypertarget{class_player_aaf4dfd871a0b731abcb0e1c960f39d4d}\label{class_player_aaf4dfd871a0b731abcb0e1c960f39d4d}} 
+\index{Player@{Player}!BasicSword@{BasicSword}}
+\index{BasicSword@{BasicSword}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{BasicSword()}{BasicSword()}}
+{\footnotesize\ttfamily void Player\+::\+Basic\+Sword (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function handles the basic sword animation. \mbox{\Hypertarget{class_player_a9c1fb9600b401085a3a7543704c7895c}\label{class_player_a9c1fb9600b401085a3a7543704c7895c}} 
+\index{Player@{Player}!celebration@{celebration}}
+\index{celebration@{celebration}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{celebration()}{celebration()}}
+{\footnotesize\ttfamily void Player\+::celebration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function handles the end game animation. \mbox{\Hypertarget{class_player_a5ce1260f57b22ac890aef07593f17565}\label{class_player_a5ce1260f57b22ac890aef07593f17565}} 
+\index{Player@{Player}!draw@{draw}}
+\index{draw@{draw}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Player\+::draw (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{g\+Renderer,  }\item[{S\+D\+L\+\_\+\+Renderer\+Flip}]{flip }\end{DoxyParamCaption})}
+
+This function draws the \mbox{\hyperlink{class_player}{Player}} character on the screen. 
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Renderer$\ast$} & is the window renderer. \\
+\hline
+{\em flip} & gives the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s orientation which is of type S\+D\+L\+\_\+\+Renderer\+Flip. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_a742fa724b555f60555ca1c3d3303d12f}\label{class_player_a742fa724b555f60555ca1c3d3303d12f}} 
+\index{Player@{Player}!HorizontalMove@{HorizontalMove}}
+\index{HorizontalMove@{HorizontalMove}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{HorizontalMove()}{HorizontalMove()}}
+{\footnotesize\ttfamily void Player\+::\+Horizontal\+Move (\begin{DoxyParamCaption}\item[{bool}]{move,  }\item[{int \&}]{x,  }\item[{int \&}]{px,  }\item[{S\+D\+L\+\_\+\+Renderer\+Flip}]{flip }\end{DoxyParamCaption})}
+
+This function is for the movement of the \mbox{\hyperlink{class_player}{Player}} object. 
+\begin{DoxyParams}{Parameters}
+{\em move} & is a boolean that denotes whether or not the \mbox{\hyperlink{class_player}{Player}} is actually moving which is boolean. \\
+\hline
+{\em x} & is an integer used to move the background to help in creating a scrollable background that is a integer. \\
+\hline
+{\em px} & is the integer distance of the \mbox{\hyperlink{class_player}{Player}} with respect to the starting point that is a integer \\
+\hline
+{\em flip} & provides the orientation of the \mbox{\hyperlink{class_player}{Player}} which is of type S\+D\+L\+\_\+\+Renderer\+Flip. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_a3c77232f39fd78d602479a1bd623a483}\label{class_player_a3c77232f39fd78d602479a1bd623a483}} 
+\index{Player@{Player}!hurt@{hurt}}
+\index{hurt@{hurt}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{hurt()}{hurt()}}
+{\footnotesize\ttfamily void Player\+::hurt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function handles the hurt animation. \mbox{\Hypertarget{class_player_a792761d5ad36a51e2691126ab2bfee18}\label{class_player_a792761d5ad36a51e2691126ab2bfee18}} 
+\index{Player@{Player}!operator++@{operator++}}
+\index{operator++@{operator++}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily void Player\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This is the increment operator overloaded. This is tied to the increment of \mbox{\hyperlink{class_player}{Player}} health. \mbox{\Hypertarget{class_player_a833210b036bbaf720c5993575988f683}\label{class_player_a833210b036bbaf720c5993575988f683}} 
+\index{Player@{Player}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}}
+{\footnotesize\ttfamily void Player\+::operator-\/-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This is the decrement operator overloaded. This is tied to the decrement of \mbox{\hyperlink{class_player}{Player}} health. \mbox{\Hypertarget{class_player_a145bcf5e09127dea9a2941fe68a62be0}\label{class_player_a145bcf5e09127dea9a2941fe68a62be0}} 
+\index{Player@{Player}!operator=@{operator=}}
+\index{operator=@{operator=}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily void Player\+::operator= (\begin{DoxyParamCaption}\item[{int \&}]{apples\+Left }\end{DoxyParamCaption})}
+
+This is the assignment operator overloaded. This is tied to gamebar management of \mbox{\hyperlink{class_player}{Player}} health. \mbox{\Hypertarget{class_player_ab36fdfbf2ed82fa16d1480a6b19d0b90}\label{class_player_ab36fdfbf2ed82fa16d1480a6b19d0b90}} 
+\index{Player@{Player}!reduceHealth@{reduceHealth}}
+\index{reduceHealth@{reduceHealth}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{reduceHealth()}{reduceHealth()}}
+{\footnotesize\ttfamily void Player\+::reduce\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function reduces \mbox{\hyperlink{class_player}{Player}} health. \mbox{\Hypertarget{class_player_a9d21df8dede041e5973426fcfe1d36f8}\label{class_player_a9d21df8dede041e5973426fcfe1d36f8}} 
+\index{Player@{Player}!stateLoad@{stateLoad}}
+\index{stateLoad@{stateLoad}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{stateLoad()}{stateLoad()}}
+{\footnotesize\ttfamily void Player\+::state\+Load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+loads all the players stats from file to member variables \mbox{\Hypertarget{class_player_ac4546c6a542fad8f884c3db88b75d814}\label{class_player_ac4546c6a542fad8f884c3db88b75d814}} 
+\index{Player@{Player}!stateReset@{stateReset}}
+\index{stateReset@{stateReset}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{stateReset()}{stateReset()}}
+{\footnotesize\ttfamily void Player\+::state\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+resets player stats when there is a new game \mbox{\Hypertarget{class_player_ae7a05ac43c2fd44472cd1172453fa5d6}\label{class_player_ae7a05ac43c2fd44472cd1172453fa5d6}} 
+\index{Player@{Player}!stateWrite@{stateWrite}}
+\index{stateWrite@{stateWrite}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{stateWrite()}{stateWrite()}}
+{\footnotesize\ttfamily void Player\+::state\+Write (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+writes all player stats to game file upon exit 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/akeel/\+One\+Drive/\+Desktop/finalfinalfinalfinalfinal/Player.\+hpp\item 
+C\+:/\+Users/akeel/\+One\+Drive/\+Desktop/finalfinalfinalfinalfinal/Player.\+cpp\end{DoxyCompactItemize}

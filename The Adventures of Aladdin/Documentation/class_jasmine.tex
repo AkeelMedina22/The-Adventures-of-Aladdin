@@ -1,0 +1,83 @@
+\hypertarget{class_jasmine}{}\doxysection{Jasmine Class Reference}
+\label{class_jasmine}\index{Jasmine@{Jasmine}}
+
+
+This class provides the move and animation functionality for the \mbox{\hyperlink{class_jasmine}{Jasmine}} character. It inherits from the \mbox{\hyperlink{class_actor}{Actor}} class. This class is implemented using Singleton Design Pattern. Move\+Count is tied to the move animation of the character.  
+
+
+
+
+{\ttfamily \#include $<$jasmine.\+hpp$>$}
+
+Inheritance diagram for Jasmine\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_jasmine}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_jasmine_af949b8a1c47249e4a16e638a211ea837}{Jasmine}} (S\+D\+L\+\_\+\+Texture $\ast$asst)
+\item 
+void \mbox{\hyperlink{class_jasmine_a9d14f5df4ff0d8c362e1b0e350efe0bc}{Move}} (bool flag4, S\+D\+L\+\_\+\+Renderer\+Flip flip)
+\item 
+void \mbox{\hyperlink{class_jasmine_a9df487f6929ab3daf4055fed477281a4}{draw}} (S\+D\+L\+\_\+\+Renderer $\ast$g\+Renderer)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_jasmine_a6d86dbdc64518524ace729ba5420312f}\label{class_jasmine_a6d86dbdc64518524ace729ba5420312f}} 
+static \mbox{\hyperlink{class_jasmine}{Jasmine}} $\ast$ {\bfseries get\+Instance} (S\+D\+L\+\_\+\+Texture $\ast$Jassets)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class provides the move and animation functionality for the \mbox{\hyperlink{class_jasmine}{Jasmine}} character. It inherits from the \mbox{\hyperlink{class_actor}{Actor}} class. This class is implemented using Singleton Design Pattern. Move\+Count is tied to the move animation of the character. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_jasmine_af949b8a1c47249e4a16e638a211ea837}\label{class_jasmine_af949b8a1c47249e4a16e638a211ea837}} 
+\index{Jasmine@{Jasmine}!Jasmine@{Jasmine}}
+\index{Jasmine@{Jasmine}!Jasmine@{Jasmine}}
+\doxysubsubsection{\texorpdfstring{Jasmine()}{Jasmine()}}
+{\footnotesize\ttfamily Jasmine\+::\+Jasmine (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{asst }\end{DoxyParamCaption})}
+
+This is the constructor for the \mbox{\hyperlink{class_jasmine}{Jasmine}} class. 
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Texture$\ast$} & this provides the asset sheet from game.\+cpp. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_jasmine_a9df487f6929ab3daf4055fed477281a4}\label{class_jasmine_a9df487f6929ab3daf4055fed477281a4}} 
+\index{Jasmine@{Jasmine}!draw@{draw}}
+\index{draw@{draw}!Jasmine@{Jasmine}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Jasmine\+::draw (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{g\+Renderer }\end{DoxyParamCaption})}
+
+This function draws the \mbox{\hyperlink{class_jasmine}{Jasmine}} character on the screen. 
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Renderer$\ast$} & is the window renderer. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_jasmine_a9d14f5df4ff0d8c362e1b0e350efe0bc}\label{class_jasmine_a9d14f5df4ff0d8c362e1b0e350efe0bc}} 
+\index{Jasmine@{Jasmine}!Move@{Move}}
+\index{Move@{Move}!Jasmine@{Jasmine}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily void Jasmine\+::\+Move (\begin{DoxyParamCaption}\item[{bool}]{flag4,  }\item[{S\+D\+L\+\_\+\+Renderer\+Flip}]{flip }\end{DoxyParamCaption})}
+
+This function calls the move animation of the \mbox{\hyperlink{class_jasmine}{Jasmine}} character. 
+\begin{DoxyParams}{Parameters}
+{\em flag4} & this boolean variable is tied to \mbox{\hyperlink{class_player}{Player}} movement. It is toggled so as to allow movement and animation when \mbox{\hyperlink{class_player}{Player}} is moving towards the right. \\
+\hline
+{\em flip} & provides the orientation of the \mbox{\hyperlink{class_player}{Player}}. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/akeel/\+One\+Drive/\+Desktop/finalfinalfinalfinalfinal/jasmine.\+hpp\item 
+C\+:/\+Users/akeel/\+One\+Drive/\+Desktop/finalfinalfinalfinalfinal/jasmine.\+cpp\end{DoxyCompactItemize}

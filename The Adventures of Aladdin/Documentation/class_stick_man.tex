@@ -1,0 +1,181 @@
+\hypertarget{class_stick_man}{}\doxysection{Stick\+Man Class Reference}
+\label{class_stick_man}\index{StickMan@{StickMan}}
+
+
+This class inherits from the \mbox{\hyperlink{class_enemy}{Enemy}} class. It is one of the three antagonists of the game. Move\+Count is the integer animation count tied to the movemnet of the \mbox{\hyperlink{class_stick_man}{Stick\+Man}}. Attack\+Count is the integer animation count tied to the attack sequence of the \mbox{\hyperlink{class_stick_man}{Stick\+Man}}. hurt\+Count is the integer animation count tied to the sequence when the \mbox{\hyperlink{class_stick_man}{Stick\+Man}} is defeated. ~\newline
+  
+
+
+
+
+{\ttfamily \#include $<$stickman.\+hpp$>$}
+
+Inheritance diagram for Stick\+Man\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_stick_man}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_stick_man_aceceb7a06250123d43e5e5d3ee44dc0f}{Stick\+Man}} (S\+D\+L\+\_\+\+Texture $\ast$asst)
+\item 
+void \mbox{\hyperlink{class_stick_man_ae85276168733d78e6c372ed2f89d646c}{draw}} (S\+D\+L\+\_\+\+Renderer $\ast$g\+Renderer)
+\item 
+void \mbox{\hyperlink{class_stick_man_a8e4d6e4baa49e3f7d9ebcdb8b24a0410}{emove}} (bool \mbox{\hyperlink{class_stick_man_a61e3215c0d5749f869cb01d86b1f6418}{move}}, bool flag2)
+\item 
+void \mbox{\hyperlink{class_stick_man_a61e3215c0d5749f869cb01d86b1f6418}{move}} (int mx, bool flag, bool flag2, S\+D\+L\+\_\+\+Renderer\+Flip flip)
+\item 
+void \mbox{\hyperlink{class_stick_man_a19f8c0ccefce48ca4ca68b2beba255eb}{attack}} (S\+D\+L\+\_\+\+Texture $\ast$g\+Texture, S\+D\+L\+\_\+\+Rect bg\+S\+RC)
+\item 
+void \mbox{\hyperlink{class_stick_man_aeeb61d3f483f4c93ce71bfba2d38e17d}{hurt}} ()
+\item 
+char \mbox{\hyperlink{class_stick_man_a46c21c00930bc15d205b377125f6000d}{get\+Type}} ()
+\item 
+void \mbox{\hyperlink{class_stick_man_adb89c5e7822ac95f9112810c3c79647e}{set\+Healthn\+Mover}} (int helth, int xmov)
+\item 
+void \mbox{\hyperlink{class_stick_man_a76b34b1b0e9c240072c625b3b0831fa0}{create\+Out\+File}} (std\+::ostream \&myfile)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class inherits from the \mbox{\hyperlink{class_enemy}{Enemy}} class. It is one of the three antagonists of the game. Move\+Count is the integer animation count tied to the movemnet of the \mbox{\hyperlink{class_stick_man}{Stick\+Man}}. Attack\+Count is the integer animation count tied to the attack sequence of the \mbox{\hyperlink{class_stick_man}{Stick\+Man}}. hurt\+Count is the integer animation count tied to the sequence when the \mbox{\hyperlink{class_stick_man}{Stick\+Man}} is defeated. ~\newline
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_stick_man_aceceb7a06250123d43e5e5d3ee44dc0f}\label{class_stick_man_aceceb7a06250123d43e5e5d3ee44dc0f}} 
+\index{StickMan@{StickMan}!StickMan@{StickMan}}
+\index{StickMan@{StickMan}!StickMan@{StickMan}}
+\doxysubsubsection{\texorpdfstring{StickMan()}{StickMan()}}
+{\footnotesize\ttfamily Stick\+Man\+::\+Stick\+Man (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{asst }\end{DoxyParamCaption})}
+
+This is the constructor for the \mbox{\hyperlink{class_stick_man}{Stick\+Man}} class. 
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Texture$\ast$} & which is basically the asset file passed from the game.\+cpp. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_stick_man_a19f8c0ccefce48ca4ca68b2beba255eb}\label{class_stick_man_a19f8c0ccefce48ca4ca68b2beba255eb}} 
+\index{StickMan@{StickMan}!attack@{attack}}
+\index{attack@{attack}!StickMan@{StickMan}}
+\doxysubsubsection{\texorpdfstring{attack()}{attack()}}
+{\footnotesize\ttfamily void Stick\+Man\+::attack (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{g\+Texture,  }\item[{S\+D\+L\+\_\+\+Rect}]{bg\+S\+RC }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function cycles through the attack animation of the \mbox{\hyperlink{class_stick_man}{Stick\+Man}}. Cycling is done through Attack\+Count. 
+\begin{DoxyParams}{Parameters}
+{\em bg\+S\+RC} & is an S\+D\+L\+\_\+\+Rect which provides background co-\/ordinates for rendering of scene during Attack. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_enemy_aa18cd7f97407af25bd6aa4c1375ae412}{Enemy}}.
+
+\mbox{\Hypertarget{class_stick_man_a76b34b1b0e9c240072c625b3b0831fa0}\label{class_stick_man_a76b34b1b0e9c240072c625b3b0831fa0}} 
+\index{StickMan@{StickMan}!createOutFile@{createOutFile}}
+\index{createOutFile@{createOutFile}!StickMan@{StickMan}}
+\doxysubsubsection{\texorpdfstring{createOutFile()}{createOutFile()}}
+{\footnotesize\ttfamily void Stick\+Man\+::create\+Out\+File (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{myfile }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This functions writes the type, health value and x-\/coordinate to our save file. 
+\begin{DoxyParams}{Parameters}
+{\em myfile} & is the ostream object passed by reference from game.\+cpp when creating the save file. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_enemy_a636a62d58910fec939db2b5a8ba5fe91}{Enemy}}.
+
+\mbox{\Hypertarget{class_stick_man_ae85276168733d78e6c372ed2f89d646c}\label{class_stick_man_ae85276168733d78e6c372ed2f89d646c}} 
+\index{StickMan@{StickMan}!draw@{draw}}
+\index{draw@{draw}!StickMan@{StickMan}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Stick\+Man\+::draw (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{g\+Renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This draw function renders the \mbox{\hyperlink{class_stick_man}{Stick\+Man}} object on the screen. 
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Renderer$\ast$} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_enemy_a98469b76c2b06a03d0fe55c09269782e}{Enemy}}.
+
+\mbox{\Hypertarget{class_stick_man_a8e4d6e4baa49e3f7d9ebcdb8b24a0410}\label{class_stick_man_a8e4d6e4baa49e3f7d9ebcdb8b24a0410}} 
+\index{StickMan@{StickMan}!emove@{emove}}
+\index{emove@{emove}!StickMan@{StickMan}}
+\doxysubsubsection{\texorpdfstring{emove()}{emove()}}
+{\footnotesize\ttfamily void Stick\+Man\+::emove (\begin{DoxyParamCaption}\item[{bool}]{move,  }\item[{bool}]{flag2 }\end{DoxyParamCaption})}
+
+This function cycles through the move animation of the \mbox{\hyperlink{class_stick_man}{Stick\+Man}}. 
+\begin{DoxyParams}{Parameters}
+{\em move} & this is a boolean flag which toggles the x direction movement of the object on the screen. \textbackslash{}parm flag2 is a boolean flag which toggles whether or not the animation must play or not. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_stick_man_a46c21c00930bc15d205b377125f6000d}\label{class_stick_man_a46c21c00930bc15d205b377125f6000d}} 
+\index{StickMan@{StickMan}!getType@{getType}}
+\index{getType@{getType}!StickMan@{StickMan}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily char Stick\+Man\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function returns the type of \mbox{\hyperlink{class_enemy}{Enemy}} that it is. In this case a \mbox{\hyperlink{class_stick_man}{Stick\+Man}} ~\newline
+ 
+
+Reimplemented from \mbox{\hyperlink{class_enemy_a92ed7aaacdf46ecf1ece910ebce1567b}{Enemy}}.
+
+\mbox{\Hypertarget{class_stick_man_aeeb61d3f483f4c93ce71bfba2d38e17d}\label{class_stick_man_aeeb61d3f483f4c93ce71bfba2d38e17d}} 
+\index{StickMan@{StickMan}!hurt@{hurt}}
+\index{hurt@{hurt}!StickMan@{StickMan}}
+\doxysubsubsection{\texorpdfstring{hurt()}{hurt()}}
+{\footnotesize\ttfamily void Stick\+Man\+::hurt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function cycles through the death animation of the \mbox{\hyperlink{class_stick_man}{Stick\+Man}}. Cycling is done through hurt\+Count. 
+
+Reimplemented from \mbox{\hyperlink{class_enemy_a90d864122b0a26163400a11ed36363ed}{Enemy}}.
+
+\mbox{\Hypertarget{class_stick_man_a61e3215c0d5749f869cb01d86b1f6418}\label{class_stick_man_a61e3215c0d5749f869cb01d86b1f6418}} 
+\index{StickMan@{StickMan}!move@{move}}
+\index{move@{move}!StickMan@{StickMan}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Stick\+Man\+::move (\begin{DoxyParamCaption}\item[{int}]{mx,  }\item[{bool}]{flag,  }\item[{bool}]{flag2,  }\item[{S\+D\+L\+\_\+\+Renderer\+Flip}]{flip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function determines the static or movable nature of the \mbox{\hyperlink{class_stick_man}{Stick\+Man}} object and thus appropiately plays the respective move animation called through emove. 
+\begin{DoxyParams}{Parameters}
+{\em mx} & this is the integer x value of the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s mover so as to determine the distance between the \mbox{\hyperlink{class_stick_man}{Stick\+Man}} and \mbox{\hyperlink{class_player}{Player}} and thus force \mbox{\hyperlink{class_stick_man}{Stick\+Man}} movement towards the left. \\
+\hline
+{\em flag} & boolean value which is set true when this enemy is created. \\
+\hline
+{\em flag2} & is a boolean variable that toggles true when left arrow key is down and false when it is up. \\
+\hline
+{\em flip} & denotes the orientation of the \mbox{\hyperlink{class_player}{Player}} and this is of type S\+D\+L\+\_\+\+Renderer\+Flip. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_enemy_ae97862e90779f5652675f3ecbbcd9d0c}{Enemy}}.
+
+\mbox{\Hypertarget{class_stick_man_adb89c5e7822ac95f9112810c3c79647e}\label{class_stick_man_adb89c5e7822ac95f9112810c3c79647e}} 
+\index{StickMan@{StickMan}!setHealthnMover@{setHealthnMover}}
+\index{setHealthnMover@{setHealthnMover}!StickMan@{StickMan}}
+\doxysubsubsection{\texorpdfstring{setHealthnMover()}{setHealthnMover()}}
+{\footnotesize\ttfamily void Stick\+Man\+::set\+Healthn\+Mover (\begin{DoxyParamCaption}\item[{int}]{helth,  }\item[{int}]{xmov }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function sets the \mbox{\hyperlink{class_stick_man}{Stick\+Man}}\textquotesingle{}s health and position when loading the game from the save file. \textbackslash{}parm helth is the passed health integer value read from the save file. 
+\begin{DoxyParams}{Parameters}
+{\em xmov} & is the passed integer x-\/coordinate read from the save file. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_enemy_a2589276898573c32f6ba320949620fa5}{Enemy}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/akeel/\+One\+Drive/\+Desktop/finalfinalfinalfinalfinal/stickman.\+hpp\item 
+C\+:/\+Users/akeel/\+One\+Drive/\+Desktop/finalfinalfinalfinalfinal/stickman.\+cpp\end{DoxyCompactItemize}

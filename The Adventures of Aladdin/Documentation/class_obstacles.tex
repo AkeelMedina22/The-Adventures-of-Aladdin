@@ -1,0 +1,155 @@
+\hypertarget{class_obstacles}{}\doxysection{Obstacles Class Reference}
+\label{class_obstacles}\index{Obstacles@{Obstacles}}
+
+
+This is the Parent class to generate the obstacles.  
+
+
+
+
+{\ttfamily \#include $<$obstacles.\+hpp$>$}
+
+Inheritance diagram for Obstacles\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_obstacles}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_obstacles_a24c2259ccacf9ce98d373796b2a253f0}{Obstacles}} (S\+D\+L\+\_\+\+Texture $\ast$asst)
+\item 
+\mbox{\hyperlink{class_obstacles_a51c7f97c28a251ab75d711b23d9fe8e1}{Obstacles}} ()
+\item 
+virtual void \mbox{\hyperlink{class_obstacles_af65a283f290979775db608b971970481}{draw}} (S\+D\+L\+\_\+\+Renderer $\ast$)
+\item 
+virtual void \mbox{\hyperlink{class_obstacles_a944dbe10d9fe3061bb66e29455dfc01b}{move}} (S\+D\+L\+\_\+\+Renderer\+Flip flip, bool flag3)
+\item 
+S\+D\+L\+\_\+\+Rect \mbox{\hyperlink{class_obstacles_a547f00e907f0356af3819e3d55e27b7f}{get\+Move}} ()
+\item 
+virtual char \mbox{\hyperlink{class_obstacles_ae0107937f92255fd3113ac2d645a7a54}{name}} ()
+\item 
+virtual void \mbox{\hyperlink{class_obstacles_a58a96d81c80911491b2033cd96a1fc0f}{set\+Move}} (int x)
+\item 
+virtual void \mbox{\hyperlink{class_obstacles_a2c94b68a02fe45083d7d5f658bad165c}{create\+Out\+File}} (std\+::ostream \&myfile)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_obstacles_a5840aa0bd15e3b08937cd62588a014ca}\label{class_obstacles_a5840aa0bd15e3b08937cd62588a014ca}} 
+S\+D\+L\+\_\+\+Rect {\bfseries mover}
+\item 
+\mbox{\Hypertarget{class_obstacles_aa497a028e538d076631521d6a2dfb2ef}\label{class_obstacles_aa497a028e538d076631521d6a2dfb2ef}} 
+S\+D\+L\+\_\+\+Renderer $\ast$ {\bfseries g\+Renderer}
+\item 
+\mbox{\Hypertarget{class_obstacles_ae5c62a725cfaabc5692f9587185b81a0}\label{class_obstacles_ae5c62a725cfaabc5692f9587185b81a0}} 
+S\+D\+L\+\_\+\+Renderer $\ast$ {\bfseries assets}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the Parent class to generate the obstacles. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_obstacles_a24c2259ccacf9ce98d373796b2a253f0}\label{class_obstacles_a24c2259ccacf9ce98d373796b2a253f0}} 
+\index{Obstacles@{Obstacles}!Obstacles@{Obstacles}}
+\index{Obstacles@{Obstacles}!Obstacles@{Obstacles}}
+\doxysubsubsection{\texorpdfstring{Obstacles()}{Obstacles()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Obstacles\+::\+Obstacles (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{asst }\end{DoxyParamCaption})}
+
+This is the constructor for the \mbox{\hyperlink{class_obstacles}{Obstacles}} class. 
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Texture$\ast$} & which is basically the asset file passed from the game.\+cpp. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_obstacles_a51c7f97c28a251ab75d711b23d9fe8e1}\label{class_obstacles_a51c7f97c28a251ab75d711b23d9fe8e1}} 
+\index{Obstacles@{Obstacles}!Obstacles@{Obstacles}}
+\index{Obstacles@{Obstacles}!Obstacles@{Obstacles}}
+\doxysubsubsection{\texorpdfstring{Obstacles()}{Obstacles()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Obstacles\+::\+Obstacles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This is the default constructor for the \mbox{\hyperlink{class_obstacles}{Obstacles}} class that does not take any arguments 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_obstacles_a2c94b68a02fe45083d7d5f658bad165c}\label{class_obstacles_a2c94b68a02fe45083d7d5f658bad165c}} 
+\index{Obstacles@{Obstacles}!createOutFile@{createOutFile}}
+\index{createOutFile@{createOutFile}!Obstacles@{Obstacles}}
+\doxysubsubsection{\texorpdfstring{createOutFile()}{createOutFile()}}
+{\footnotesize\ttfamily void Obstacles\+::create\+Out\+File (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{myfile }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This functions writes the type, integer health value and integer x-\/coordinate to our save file. 
+\begin{DoxyParams}{Parameters}
+{\em myfile} & is the ostream object passed by reference from game.\+cpp when creating the save file. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_lamp_ab7b37baca500df231bb740a059227991}{Lamp}}, and \mbox{\hyperlink{class_apple_af3ab35aaa389b71d8459950a2cabb9d2}{Apple}}.
+
+\mbox{\Hypertarget{class_obstacles_af65a283f290979775db608b971970481}\label{class_obstacles_af65a283f290979775db608b971970481}} 
+\index{Obstacles@{Obstacles}!draw@{draw}}
+\index{draw@{draw}!Obstacles@{Obstacles}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Obstacles\+::draw (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{g\+Renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This virtual draw function renders the \mbox{\hyperlink{class_obstacles}{Obstacles}} object on the screen. 
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Renderer$\ast$} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_lamp_a22f396a88374ef2360a99674da43dfe4}{Lamp}}, and \mbox{\hyperlink{class_apple_a78b3c54afdf9df7bf3d008a842b238e8}{Apple}}.
+
+\mbox{\Hypertarget{class_obstacles_a547f00e907f0356af3819e3d55e27b7f}\label{class_obstacles_a547f00e907f0356af3819e3d55e27b7f}} 
+\index{Obstacles@{Obstacles}!getMove@{getMove}}
+\index{getMove@{getMove}!Obstacles@{Obstacles}}
+\doxysubsubsection{\texorpdfstring{getMove()}{getMove()}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Rect Obstacles\+::get\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function returns the mover for the obstacle. \mbox{\Hypertarget{class_obstacles_a944dbe10d9fe3061bb66e29455dfc01b}\label{class_obstacles_a944dbe10d9fe3061bb66e29455dfc01b}} 
+\index{Obstacles@{Obstacles}!move@{move}}
+\index{move@{move}!Obstacles@{Obstacles}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Obstacles\+::move (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer\+Flip}]{flip,  }\item[{bool}]{flag3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function moves the Obstalces object onto the screen when appropiate. When the \mbox{\hyperlink{class_player}{Player}} is moving to the right the Obstacle is reducing the x value. When player is moving to the left, we are increasing the x value. 
+\begin{DoxyParams}{Parameters}
+{\em flip} & provides the class with the orientation of the player which is of type S\+D\+L\+\_\+\+Renderer\+Flip.. \\
+\hline
+{\em flag3} & is a boolean that is toggled true when \mbox{\hyperlink{class_player}{Player}} is pressing the key down. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_lamp_a12ca33180491f98d5eda521625be7452}{Lamp}}, and \mbox{\hyperlink{class_apple_acccfb814c2eb3790c5d45c32218e3d79}{Apple}}.
+
+\mbox{\Hypertarget{class_obstacles_ae0107937f92255fd3113ac2d645a7a54}\label{class_obstacles_ae0107937f92255fd3113ac2d645a7a54}} 
+\index{Obstacles@{Obstacles}!name@{name}}
+\index{name@{name}!Obstacles@{Obstacles}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily char Obstacles\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function returns the specific type of Obstacle. 
+
+Reimplemented in \mbox{\hyperlink{class_lamp_a3268ceb756b21dc334b184b422029daf}{Lamp}}, and \mbox{\hyperlink{class_apple_a4f01b74f9f9537b6819b3bee4438ea01}{Apple}}.
+
+\mbox{\Hypertarget{class_obstacles_a58a96d81c80911491b2033cd96a1fc0f}\label{class_obstacles_a58a96d81c80911491b2033cd96a1fc0f}} 
+\index{Obstacles@{Obstacles}!setMove@{setMove}}
+\index{setMove@{setMove}!Obstacles@{Obstacles}}
+\doxysubsubsection{\texorpdfstring{setMove()}{setMove()}}
+{\footnotesize\ttfamily void Obstacles\+::set\+Move (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function sets the x cooridinate of the Obstacle when loading from save file. 
+
+Reimplemented in \mbox{\hyperlink{class_lamp_a70114ba808f0177b7a0cf355a4900eb4}{Lamp}}, and \mbox{\hyperlink{class_apple_a8c69e0aace2141f791e91de527d122ba}{Apple}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/akeel/\+One\+Drive/\+Desktop/finalfinalfinalfinalfinal/obstacles.\+hpp\item 
+C\+:/\+Users/akeel/\+One\+Drive/\+Desktop/finalfinalfinalfinalfinal/obstacles.\+cpp\end{DoxyCompactItemize}

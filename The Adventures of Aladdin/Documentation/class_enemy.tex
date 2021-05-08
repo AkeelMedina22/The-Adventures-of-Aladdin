@@ -1,0 +1,214 @@
+\hypertarget{class_enemy}{}\doxysection{Enemy Class Reference}
+\label{class_enemy}\index{Enemy@{Enemy}}
+
+
+This is the Parent class to generate the enemies. This class further inherits from the \mbox{\hyperlink{class_actor}{Actor}} Class.  
+
+
+
+
+{\ttfamily \#include $<$Enemy.\+hpp$>$}
+
+Inheritance diagram for Enemy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_enemy}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_enemy_a5c12ba834f3c645de75a69c7c9191ef3}{Enemy}} (S\+D\+L\+\_\+\+Texture $\ast$asst)
+\item 
+\mbox{\hyperlink{class_enemy_a94f30d348b6d2840fd71675472ba38dd}{Enemy}} ()
+\item 
+virtual void \mbox{\hyperlink{class_enemy_a98469b76c2b06a03d0fe55c09269782e}{draw}} (S\+D\+L\+\_\+\+Renderer $\ast$g\+Renderer)
+\item 
+virtual void \mbox{\hyperlink{class_enemy_ae97862e90779f5652675f3ecbbcd9d0c}{move}} (int mx, bool flag, bool flag2, S\+D\+L\+\_\+\+Renderer\+Flip flip)
+\item 
+virtual void \mbox{\hyperlink{class_enemy_aa18cd7f97407af25bd6aa4c1375ae412}{attack}} (S\+D\+L\+\_\+\+Texture $\ast$g\+Texture, S\+D\+L\+\_\+\+Rect bg\+S\+RC)
+\item 
+virtual void \mbox{\hyperlink{class_enemy_a90d864122b0a26163400a11ed36363ed}{hurt}} ()
+\item 
+virtual char \mbox{\hyperlink{class_enemy_a92ed7aaacdf46ecf1ece910ebce1567b}{get\+Type}} ()
+\item 
+virtual void \mbox{\hyperlink{class_enemy_a2589276898573c32f6ba320949620fa5}{set\+Healthn\+Mover}} (int helth, int xmov)
+\item 
+void \mbox{\hyperlink{class_enemy_a5261569c861f6b4e3d8bad161778c155}{reduce\+Health}} (char ch)
+\item 
+void \mbox{\hyperlink{class_enemy_aefbc6eace1fcd7856320c89410a9da68}{check\+Collison}} (S\+D\+L\+\_\+\+Rect a, S\+D\+L\+\_\+\+Rect b, S\+D\+L\+\_\+\+Renderer\+Flip flip, char ch)
+\item 
+bool \mbox{\hyperlink{class_enemy_a7bd649085ca6906fbe276237c27f69ba}{operator$<$=}} (int temp)
+\item 
+virtual void \mbox{\hyperlink{class_enemy_a636a62d58910fec939db2b5a8ba5fe91}{create\+Out\+File}} (std\+::ostream \&myfile)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This is the Parent class to generate the enemies. This class further inherits from the \mbox{\hyperlink{class_actor}{Actor}} Class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_enemy_a5c12ba834f3c645de75a69c7c9191ef3}\label{class_enemy_a5c12ba834f3c645de75a69c7c9191ef3}} 
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{Enemy()}{Enemy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Enemy\+::\+Enemy (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{asst }\end{DoxyParamCaption})}
+
+This is the constructor for the \mbox{\hyperlink{class_enemy}{Enemy}} class. 
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Texture$\ast$} & which is basically the asset file passed from the game.\+cpp. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_enemy_a94f30d348b6d2840fd71675472ba38dd}\label{class_enemy_a94f30d348b6d2840fd71675472ba38dd}} 
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{Enemy()}{Enemy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Enemy\+::\+Enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This is the default constructor for the \mbox{\hyperlink{class_enemy}{Enemy}} class that does not take any arguments 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_enemy_aa18cd7f97407af25bd6aa4c1375ae412}\label{class_enemy_aa18cd7f97407af25bd6aa4c1375ae412}} 
+\index{Enemy@{Enemy}!attack@{attack}}
+\index{attack@{attack}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{attack()}{attack()}}
+{\footnotesize\ttfamily void Enemy\+::attack (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{g\+Texture,  }\item[{S\+D\+L\+\_\+\+Rect}]{bg\+S\+RC }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This virtual function cycles through the attack animation of the \mbox{\hyperlink{class_enemy}{Enemy}}. 
+
+Reimplemented in \mbox{\hyperlink{class_stick_man_a19f8c0ccefce48ca4ca68b2beba255eb}{Stick\+Man}}, and \mbox{\hyperlink{class_big_guard_adef69421dde19d328e32240d06c48992}{Big\+Guard}}.
+
+\mbox{\Hypertarget{class_enemy_aefbc6eace1fcd7856320c89410a9da68}\label{class_enemy_aefbc6eace1fcd7856320c89410a9da68}} 
+\index{Enemy@{Enemy}!checkCollison@{checkCollison}}
+\index{checkCollison@{checkCollison}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{checkCollison()}{checkCollison()}}
+{\footnotesize\ttfamily void Enemy\+::check\+Collison (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Rect}]{a,  }\item[{S\+D\+L\+\_\+\+Rect}]{b,  }\item[{S\+D\+L\+\_\+\+Renderer\+Flip}]{flip,  }\item[{char}]{ch }\end{DoxyParamCaption})}
+
+This function checks for collision between the \mbox{\hyperlink{class_enemy}{Enemy}} and the \mbox{\hyperlink{class_player}{Player}}. If true reduce\+Health is called. 
+\begin{DoxyParams}{Parameters}
+{\em a} & is the S\+D\+L\+\_\+\+Rect mover for the \mbox{\hyperlink{class_player}{Player}}. \\
+\hline
+{\em b} & is the S\+D\+L\+\_\+\+Rect mover for the \mbox{\hyperlink{class_enemy}{Enemy}}. \\
+\hline
+{\em flip} & denotes the orientation of the \mbox{\hyperlink{class_player}{Player}} which is of type S\+D\+L\+\_\+\+Renderer\+Flip. \\
+\hline
+{\em ch} & is a character that denotes the attack performed by the \mbox{\hyperlink{class_player}{Player}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_enemy_a636a62d58910fec939db2b5a8ba5fe91}\label{class_enemy_a636a62d58910fec939db2b5a8ba5fe91}} 
+\index{Enemy@{Enemy}!createOutFile@{createOutFile}}
+\index{createOutFile@{createOutFile}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{createOutFile()}{createOutFile()}}
+{\footnotesize\ttfamily void Enemy\+::create\+Out\+File (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{myfile }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This virtual function writes the type, health value and x-\/coordinate to our save file. 
+\begin{DoxyParams}{Parameters}
+{\em myfile} & is the ostream object passed by reference from game.\+cpp when creating the save file. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_stick_man_a76b34b1b0e9c240072c625b3b0831fa0}{Stick\+Man}}, \mbox{\hyperlink{class_big_guard_ae56eb1582ab8d853a0884019bf1a8931}{Big\+Guard}}, and \mbox{\hyperlink{class_alien_a2796bbec8cc41dc6f6b9b620dfbc546e}{Alien}}.
+
+\mbox{\Hypertarget{class_enemy_a98469b76c2b06a03d0fe55c09269782e}\label{class_enemy_a98469b76c2b06a03d0fe55c09269782e}} 
+\index{Enemy@{Enemy}!draw@{draw}}
+\index{draw@{draw}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Enemy\+::draw (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{g\+Renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This virtual draw function renders the \mbox{\hyperlink{class_enemy}{Enemy}} object on the screen. 
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Renderer$\ast$} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_stick_man_ae85276168733d78e6c372ed2f89d646c}{Stick\+Man}}, \mbox{\hyperlink{class_big_guard_a796aef4e7bd30034e014b2e7ecbbf1b6}{Big\+Guard}}, and \mbox{\hyperlink{class_alien_a42588c58cd52ee58b0954020b4d76af8}{Alien}}.
+
+\mbox{\Hypertarget{class_enemy_a92ed7aaacdf46ecf1ece910ebce1567b}\label{class_enemy_a92ed7aaacdf46ecf1ece910ebce1567b}} 
+\index{Enemy@{Enemy}!getType@{getType}}
+\index{getType@{getType}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily char Enemy\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This virtual function returns the type of \mbox{\hyperlink{class_enemy}{Enemy}} that it is. ~\newline
+ 
+
+Reimplemented in \mbox{\hyperlink{class_stick_man_a46c21c00930bc15d205b377125f6000d}{Stick\+Man}}, \mbox{\hyperlink{class_big_guard_a4f91a442d4cc57e8203362c20531b5c4}{Big\+Guard}}, and \mbox{\hyperlink{class_alien_a631aae83ada54aff551d44c3b9c1cd13}{Alien}}.
+
+\mbox{\Hypertarget{class_enemy_a90d864122b0a26163400a11ed36363ed}\label{class_enemy_a90d864122b0a26163400a11ed36363ed}} 
+\index{Enemy@{Enemy}!hurt@{hurt}}
+\index{hurt@{hurt}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{hurt()}{hurt()}}
+{\footnotesize\ttfamily void Enemy\+::hurt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This virtual function cycles through the death animation of the \mbox{\hyperlink{class_enemy}{Enemy}}. 
+
+Reimplemented in \mbox{\hyperlink{class_stick_man_aeeb61d3f483f4c93ce71bfba2d38e17d}{Stick\+Man}}, \mbox{\hyperlink{class_big_guard_ab94f30492927f7f9b86b7f8fb3171749}{Big\+Guard}}, and \mbox{\hyperlink{class_alien_a0117f88cf508a9ef49432d959e1e384b}{Alien}}.
+
+\mbox{\Hypertarget{class_enemy_ae97862e90779f5652675f3ecbbcd9d0c}\label{class_enemy_ae97862e90779f5652675f3ecbbcd9d0c}} 
+\index{Enemy@{Enemy}!move@{move}}
+\index{move@{move}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Enemy\+::move (\begin{DoxyParamCaption}\item[{int}]{mx,  }\item[{bool}]{flag,  }\item[{bool}]{flag2,  }\item[{S\+D\+L\+\_\+\+Renderer\+Flip}]{flip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This virtual function determines the static or movable nature of the \mbox{\hyperlink{class_enemy}{Enemy}} object and thus appropiately plays the respective move animation. 
+\begin{DoxyParams}{Parameters}
+{\em mx} & this is the integer x value of the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s mover so as to determine the distance between the \mbox{\hyperlink{class_enemy}{Enemy}} and \mbox{\hyperlink{class_player}{Player}} and thus force \mbox{\hyperlink{class_enemy}{Enemy}} movement towards the left. \\
+\hline
+{\em flag} & boolean value which is set true when this enemy is created. \\
+\hline
+{\em flag2} & variable that toggles true when left arrow key is down and false when it is up. \\
+\hline
+{\em flip} & denotes the orientation of the \mbox{\hyperlink{class_player}{Player}} which is of type S\+D\+L\+\_\+\+Renderer\+Flip. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_stick_man_a61e3215c0d5749f869cb01d86b1f6418}{Stick\+Man}}, \mbox{\hyperlink{class_big_guard_a5a326b3c8206dde53581997d45dfff5e}{Big\+Guard}}, and \mbox{\hyperlink{class_alien_a3074eda882a0c10d9433b52f22643e65}{Alien}}.
+
+\mbox{\Hypertarget{class_enemy_a7bd649085ca6906fbe276237c27f69ba}\label{class_enemy_a7bd649085ca6906fbe276237c27f69ba}} 
+\index{Enemy@{Enemy}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool Enemy\+::operator$<$= (\begin{DoxyParamCaption}\item[{int}]{temp }\end{DoxyParamCaption})}
+
+This is the less than or equal to operator overloaded. 
+\begin{DoxyParams}{Parameters}
+{\em temp} & is a constant integer that the \mbox{\hyperlink{class_enemy}{Enemy}} is compared with in the context of its health value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_enemy_a5261569c861f6b4e3d8bad161778c155}\label{class_enemy_a5261569c861f6b4e3d8bad161778c155}} 
+\index{Enemy@{Enemy}!reduceHealth@{reduceHealth}}
+\index{reduceHealth@{reduceHealth}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{reduceHealth()}{reduceHealth()}}
+{\footnotesize\ttfamily void Enemy\+::reduce\+Health (\begin{DoxyParamCaption}\item[{char}]{ch }\end{DoxyParamCaption})}
+
+This function reduces the health of the \mbox{\hyperlink{class_enemy}{Enemy}} by a certain amount depending upon the type of attack recieved. 
+\begin{DoxyParams}{Parameters}
+{\em ch} & denotes a one character signifier as to the attack recieved. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_enemy_a2589276898573c32f6ba320949620fa5}\label{class_enemy_a2589276898573c32f6ba320949620fa5}} 
+\index{Enemy@{Enemy}!setHealthnMover@{setHealthnMover}}
+\index{setHealthnMover@{setHealthnMover}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{setHealthnMover()}{setHealthnMover()}}
+{\footnotesize\ttfamily void Enemy\+::set\+Healthn\+Mover (\begin{DoxyParamCaption}\item[{int}]{helth,  }\item[{int}]{xmov }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This virtual function sets the \mbox{\hyperlink{class_enemy}{Enemy}}\textquotesingle{}s health and position when loading the game from the save file. \textbackslash{}parm helth is the passed health integer value read from the save file. 
+\begin{DoxyParams}{Parameters}
+{\em xmov} & is the passed integer x-\/coordinate read from the save file. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_stick_man_adb89c5e7822ac95f9112810c3c79647e}{Stick\+Man}}, \mbox{\hyperlink{class_big_guard_ab6e17f449631b8209174dddaa8cc9c0e}{Big\+Guard}}, and \mbox{\hyperlink{class_alien_af7d0f515f89a02ed9bf5df351f9af5c3}{Alien}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/akeel/\+One\+Drive/\+Desktop/finalfinalfinalfinalfinal/Enemy.\+hpp\item 
+C\+:/\+Users/akeel/\+One\+Drive/\+Desktop/finalfinalfinalfinalfinal/Enemy.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,305 @@
+\hypertarget{class_game}{}\doxysection{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+This is the \mbox{\hyperlink{class_game}{Game}} Class which runs the game and interacts with all the other classes.  
+
+
+
+
+{\ttfamily \#include $<$game.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_a8ff3a6838bad4ea9493c103f96d7bff3}\label{class_game_a8ff3a6838bad4ea9493c103f96d7bff3}} 
+bool {\bfseries init} ()
+\item 
+\mbox{\Hypertarget{class_game_af4b6b1d9f209d7b08b7c6c8556898ecb}\label{class_game_af4b6b1d9f209d7b08b7c6c8556898ecb}} 
+bool {\bfseries load\+Media} ()
+\item 
+\mbox{\Hypertarget{class_game_ad5133caa8447aadf71d6ba6c20d552bd}\label{class_game_ad5133caa8447aadf71d6ba6c20d552bd}} 
+void {\bfseries close} ()
+\item 
+\mbox{\Hypertarget{class_game_ac3fa63d453d083faffe00d2501ea8d2b}\label{class_game_ac3fa63d453d083faffe00d2501ea8d2b}} 
+S\+D\+L\+\_\+\+Texture $\ast$ {\bfseries load\+Texture} (std\+::string path)
+\item 
+void \mbox{\hyperlink{class_game_a1ab78f5ed0d5ea879157357cf2fb2afa}{run}} ()
+\item 
+void \mbox{\hyperlink{class_game_a3b9243cc310fa6cfd2b75fba1cc945a9}{draw\+All\+Objects}} (int mx, bool flag, bool flag2, S\+D\+L\+\_\+\+Renderer\+Flip flip, bool flag3)
+\item 
+void \mbox{\hyperlink{class_game_ad27501707806bc52453872b3d8968da2}{Enemy\+Attack}} (S\+D\+L\+\_\+\+Rect bg\+Src, \mbox{\hyperlink{class_player}{Player}} $\ast$ptr, S\+D\+L\+\_\+\+Renderer\+Flip flip, bool flag3)
+\item 
+void \mbox{\hyperlink{class_game_a27a229e80d6e5558dcbba97b09146901}{player\+Attack}} (\mbox{\hyperlink{class_player}{Player}} $\ast$ptr, S\+D\+L\+\_\+\+Renderer\+Flip flip, char ch, S\+D\+L\+\_\+\+Rect bg\+S\+RC, bool flag3)
+\item 
+void \mbox{\hyperlink{class_game_a7c87a861876e63017a9aa720bc775156}{status}} (S\+D\+L\+\_\+\+Renderer $\ast$g\+Renderer, S\+D\+L\+\_\+\+Texture $\ast$assets)
+\item 
+void \mbox{\hyperlink{class_game_a155aa8318c62c9026caa0ba93307ae2f}{draw\+All\+Items}} (S\+D\+L\+\_\+\+Renderer\+Flip flip, bool flag3)
+\item 
+void \mbox{\hyperlink{class_game_a79565dc39ddad22ccf52a8b66f0a2931}{draw\+Jas}} (bool flag4, S\+D\+L\+\_\+\+Renderer\+Flip flip)
+\item 
+void \mbox{\hyperlink{class_game_aa457421a74de776820a27ae0dc1ecdb6}{mouse\+On\+Background\+Button}} (S\+D\+L\+\_\+\+Event $\ast$e, \mbox{\hyperlink{class_player}{Player}} \&p, S\+D\+L\+\_\+\+Rect \&bg\+S\+RC, int \&px, int \&enyval, int \&appleval, int \&lampval)
+\begin{DoxyCompactList}\small\item\em Checks mouse input on main menu screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a0644e5f739ec9e4250fab341a8fa414b}{mouse\+On\+Quit\+Button}} (S\+D\+L\+\_\+\+Event $\ast$e, \mbox{\hyperlink{class_player}{Player}} \&p, S\+D\+L\+\_\+\+Rect \&bg\+S\+RC)
+\begin{DoxyCompactList}\small\item\em Checks mouse input on pause screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a4095262b85c30396c92f48a5798b1bf2}{mouse\+On\+Quit\+Button}} (S\+D\+L\+\_\+\+Event $\ast$e, \mbox{\hyperlink{class_player}{Player}} \&p, S\+D\+L\+\_\+\+Rect \&bg\+S\+RC, bool low, int \&px)
+\begin{DoxyCompactList}\small\item\em Checks mouse input on quit button on victory or lose screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a7e9704fbc92417a2c264c8c3b82b4c9e}{game\+Reset}} (\mbox{\hyperlink{class_player}{Player}} \&p, S\+D\+L\+\_\+\+Rect \&bg\+S\+RC)
+\begin{DoxyCompactList}\small\item\em resets the game and deletes all objects \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a6a76c4c17d1081c1c7e34f05380016a7}{read\+B\+G\+From\+File}} (S\+D\+L\+\_\+\+Rect \&r, int \&points)
+\begin{DoxyCompactList}\small\item\em loads from file upon the load game button press \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_ab0d2d5773b6d311b947445b9a8e945bf}{object\+Collision}} (\mbox{\hyperlink{class_player}{Player}} $\ast$ptr)
+\item 
+void \mbox{\hyperlink{class_game_abbea814dc7d0845198700120074bf42a}{Jasmine\+Collision}} (\mbox{\hyperlink{class_player}{Player}} $\ast$ptr, S\+D\+L\+\_\+\+Rect \&bg\+S\+RC, S\+D\+L\+\_\+\+Renderer\+Flip flip)
+\item 
+void \mbox{\hyperlink{class_game_a9370edb0b7adc8ccd91beadd60efaa78}{delete\+All\+Objects}} (list$<$ \mbox{\hyperlink{class_enemy}{Enemy}} $\ast$ $>$ \&enemys, list$<$ \mbox{\hyperlink{class_obstacles}{Obstacles}} $\ast$ $>$ \&items)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the \mbox{\hyperlink{class_game}{Game}} Class which runs the game and interacts with all the other classes. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_a9370edb0b7adc8ccd91beadd60efaa78}\label{class_game_a9370edb0b7adc8ccd91beadd60efaa78}} 
+\index{Game@{Game}!deleteAllObjects@{deleteAllObjects}}
+\index{deleteAllObjects@{deleteAllObjects}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{deleteAllObjects()}{deleteAllObjects()}}
+{\footnotesize\ttfamily void Game\+::delete\+All\+Objects (\begin{DoxyParamCaption}\item[{list$<$ \mbox{\hyperlink{class_enemy}{Enemy}} $\ast$ $>$ \&}]{enemys,  }\item[{list$<$ \mbox{\hyperlink{class_obstacles}{Obstacles}} $\ast$ $>$ \&}]{items }\end{DoxyParamCaption})}
+
+This function deletes all Enemies and \mbox{\hyperlink{class_obstacles}{Obstacles}}. 
+\begin{DoxyParams}{Parameters}
+{\em enemys} & is the list of type Enemy$\ast$. It houses all the enemies. \\
+\hline
+{\em items} & is the list of type Obstacles$\ast$. It houses all the obstacles. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_a155aa8318c62c9026caa0ba93307ae2f}\label{class_game_a155aa8318c62c9026caa0ba93307ae2f}} 
+\index{Game@{Game}!drawAllItems@{drawAllItems}}
+\index{drawAllItems@{drawAllItems}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{drawAllItems()}{drawAllItems()}}
+{\footnotesize\ttfamily void Game\+::draw\+All\+Items (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer\+Flip}]{flip,  }\item[{bool}]{flag3 }\end{DoxyParamCaption})}
+
+This function draws all the \mbox{\hyperlink{class_obstacles}{Obstacles}} that are currently within the items list. 
+\begin{DoxyParams}{Parameters}
+{\em flip} & provides the orientation of the \mbox{\hyperlink{class_player}{Player}} which is of type S\+D\+L\+\_\+\+Renderer\+Flip. \\
+\hline
+{\em flag3} & is a boolean that is toggled true when the \mbox{\hyperlink{class_player}{Player}} is pressing the move key down. This is related to \mbox{\hyperlink{class_obstacles}{Obstacles}} movement. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_a3b9243cc310fa6cfd2b75fba1cc945a9}\label{class_game_a3b9243cc310fa6cfd2b75fba1cc945a9}} 
+\index{Game@{Game}!drawAllObjects@{drawAllObjects}}
+\index{drawAllObjects@{drawAllObjects}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{drawAllObjects()}{drawAllObjects()}}
+{\footnotesize\ttfamily void Game\+::draw\+All\+Objects (\begin{DoxyParamCaption}\item[{int}]{mx,  }\item[{bool}]{flag,  }\item[{bool}]{flag2,  }\item[{S\+D\+L\+\_\+\+Renderer\+Flip}]{flip,  }\item[{bool}]{flag3 }\end{DoxyParamCaption})}
+
+This function draws all the Enemies that are currently within the enemys list. 
+\begin{DoxyParams}{Parameters}
+{\em mx} & this provides the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s integer x coordinate. \\
+\hline
+{\em flag} & is a boolean related to creation of the Enemies. \\
+\hline
+{\em flag2} & is a boolean that instigates \mbox{\hyperlink{class_enemy}{Enemy}} move animations but depending upon the value toggles the actual movement across the screen. \\
+\hline
+{\em flip} & provides the orientation of the \mbox{\hyperlink{class_player}{Player}} which is of type S\+D\+L\+\_\+\+Renderer\+Flip. \\
+\hline
+{\em flag3} & is a boolean that is toggled true when the \mbox{\hyperlink{class_player}{Player}} is pressing the move key down. This is related to \mbox{\hyperlink{class_obstacles}{Obstacles}} movement. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_a79565dc39ddad22ccf52a8b66f0a2931}\label{class_game_a79565dc39ddad22ccf52a8b66f0a2931}} 
+\index{Game@{Game}!drawJas@{drawJas}}
+\index{drawJas@{drawJas}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{drawJas()}{drawJas()}}
+{\footnotesize\ttfamily void Game\+::draw\+Jas (\begin{DoxyParamCaption}\item[{bool}]{flag4,  }\item[{S\+D\+L\+\_\+\+Renderer\+Flip}]{flip }\end{DoxyParamCaption})}
+
+This function draws the \mbox{\hyperlink{class_jasmine}{Jasmine}} character when she exists provided the required condition for her creation is met. 
+\begin{DoxyParams}{Parameters}
+{\em flag4} & is a boolean related to the Move function of \mbox{\hyperlink{class_jasmine}{Jasmine}} so as to have her move across the screen with the animation only when the \mbox{\hyperlink{class_player}{Player}} is moving to the right. \\
+\hline
+{\em flip} & provides the orientation of the \mbox{\hyperlink{class_player}{Player}} which is of type S\+D\+L\+\_\+\+Renderer\+Flip. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_ad27501707806bc52453872b3d8968da2}\label{class_game_ad27501707806bc52453872b3d8968da2}} 
+\index{Game@{Game}!EnemyAttack@{EnemyAttack}}
+\index{EnemyAttack@{EnemyAttack}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{EnemyAttack()}{EnemyAttack()}}
+{\footnotesize\ttfamily void Game\+::\+Enemy\+Attack (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Rect}]{bg\+Src,  }\item[{\mbox{\hyperlink{class_player}{Player}} $\ast$}]{ptr,  }\item[{S\+D\+L\+\_\+\+Renderer\+Flip}]{flip,  }\item[{bool}]{flag3 }\end{DoxyParamCaption})}
+
+This function calls the attack fucntion for all the enemies present in the scene if a certain probability is met. 
+\begin{DoxyParams}{Parameters}
+{\em bg\+Src} & provides S\+D\+L\+\_\+\+Rect src rectangle for the background -\/ this is to generate the scene when dealing with the attack animation. \\
+\hline
+{\em Player$\ast$} & is a pointer to the \mbox{\hyperlink{class_player}{Player}} object. \\
+\hline
+{\em flip} & provides the orientation of the \mbox{\hyperlink{class_player}{Player}}. \\
+\hline
+{\em flag3} & is toggled true when the \mbox{\hyperlink{class_player}{Player}} is pressing the move key down. This is related to \mbox{\hyperlink{class_obstacles}{Obstacles}} movement. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_a7e9704fbc92417a2c264c8c3b82b4c9e}\label{class_game_a7e9704fbc92417a2c264c8c3b82b4c9e}} 
+\index{Game@{Game}!gameReset@{gameReset}}
+\index{gameReset@{gameReset}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{gameReset()}{gameReset()}}
+{\footnotesize\ttfamily void Game\+::game\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{p,  }\item[{S\+D\+L\+\_\+\+Rect \&}]{bg\+S\+RC }\end{DoxyParamCaption})}
+
+
+
+resets the game and deletes all objects 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_player}{Player}}} & \&p The player generated during game, in case of load game, this needs to be written to file. \\
+\hline
+{\em S\+D\+L\+\_\+\+Rect} & \&bg\+S\+RC this is the background mover that makes it scrollable. It needs to be reset, or read from file. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_abbea814dc7d0845198700120074bf42a}\label{class_game_abbea814dc7d0845198700120074bf42a}} 
+\index{Game@{Game}!JasmineCollision@{JasmineCollision}}
+\index{JasmineCollision@{JasmineCollision}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{JasmineCollision()}{JasmineCollision()}}
+{\footnotesize\ttfamily void Game\+::\+Jasmine\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} $\ast$}]{ptr,  }\item[{S\+D\+L\+\_\+\+Rect \&}]{bg\+S\+RC,  }\item[{S\+D\+L\+\_\+\+Renderer\+Flip}]{flip }\end{DoxyParamCaption})}
+
+This function checks for collisions of the \mbox{\hyperlink{class_player}{Player}} with \mbox{\hyperlink{class_jasmine}{Jasmine}}. If collision occurs then the end game scenario takes place. 
+\begin{DoxyParams}{Parameters}
+{\em Player$\ast$,this} & is the \mbox{\hyperlink{class_player}{Player}} object\textquotesingle{}s pointer. \\
+\hline
+{\em bg\+S\+RC} & provides S\+D\+L\+\_\+\+Rect src rectangle for the background -\/ this is to generate the scene when dealing with the end game scenario. \\
+\hline
+{\em flip} & provides the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s orientation which is of type S\+D\+L\+\_\+\+Renderer\+Flip. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_aa457421a74de776820a27ae0dc1ecdb6}\label{class_game_aa457421a74de776820a27ae0dc1ecdb6}} 
+\index{Game@{Game}!mouseOnBackgroundButton@{mouseOnBackgroundButton}}
+\index{mouseOnBackgroundButton@{mouseOnBackgroundButton}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{mouseOnBackgroundButton()}{mouseOnBackgroundButton()}}
+{\footnotesize\ttfamily void Game\+::mouse\+On\+Background\+Button (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Event $\ast$}]{e,  }\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{p,  }\item[{S\+D\+L\+\_\+\+Rect \&}]{bg\+S\+RC,  }\item[{int \&}]{px,  }\item[{int \&}]{enyval,  }\item[{int \&}]{appleval,  }\item[{int \&}]{lampval }\end{DoxyParamCaption})}
+
+
+
+Checks mouse input on main menu screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Event$\ast$} & e S\+DL Event pointer that tells us when the mouse is pressed. \\
+\hline
+{\em \mbox{\hyperlink{class_player}{Player}}} & \&p The player generated during game, in case of load game, this needs to be written to file. \\
+\hline
+{\em S\+D\+L\+\_\+\+Rect} & \&bg\+S\+RC this is the background mover that makes it scrollable. It needs to be reset, or read from file. \\
+\hline
+{\em int} & \&px This is the players (ajlal pls help) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_a0644e5f739ec9e4250fab341a8fa414b}\label{class_game_a0644e5f739ec9e4250fab341a8fa414b}} 
+\index{Game@{Game}!mouseOnQuitButton@{mouseOnQuitButton}}
+\index{mouseOnQuitButton@{mouseOnQuitButton}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{mouseOnQuitButton()}{mouseOnQuitButton()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Game\+::mouse\+On\+Quit\+Button (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Event $\ast$}]{e,  }\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{p,  }\item[{S\+D\+L\+\_\+\+Rect \&}]{bg\+S\+RC }\end{DoxyParamCaption})}
+
+
+
+Checks mouse input on pause screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Event$\ast$} & e S\+DL Event pointer that tells us when the mouse is pressed. \\
+\hline
+{\em \mbox{\hyperlink{class_player}{Player}}} & \&p The player generated during game, in case of load game, this needs to be written to file. \\
+\hline
+{\em S\+D\+L\+\_\+\+Rect} & \&bg\+S\+RC this is the background mover that makes it scrollable. It needs to be reset, or read from file. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_a4095262b85c30396c92f48a5798b1bf2}\label{class_game_a4095262b85c30396c92f48a5798b1bf2}} 
+\index{Game@{Game}!mouseOnQuitButton@{mouseOnQuitButton}}
+\index{mouseOnQuitButton@{mouseOnQuitButton}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{mouseOnQuitButton()}{mouseOnQuitButton()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Game\+::mouse\+On\+Quit\+Button (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Event $\ast$}]{e,  }\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{p,  }\item[{S\+D\+L\+\_\+\+Rect \&}]{bg\+S\+RC,  }\item[{bool}]{low,  }\item[{int \&}]{px }\end{DoxyParamCaption})}
+
+
+
+Checks mouse input on quit button on victory or lose screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Event$\ast$} & e S\+DL Event pointer that tells us when the mouse is pressed. \\
+\hline
+{\em \mbox{\hyperlink{class_player}{Player}}} & \&p The player generated during game, in case of load game, this needs to be written to file. \\
+\hline
+{\em S\+D\+L\+\_\+\+Rect} & \&bg\+S\+RC this is the background mover that makes it scrollable. It needs to be reset, or read from file. \\
+\hline
+{\em bool} & low this is to make clear this function is overloaded and is for victory screen, has no use \\
+\hline
+{\em int} & \&px this is the players virtual position and needs to be reset \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_ab0d2d5773b6d311b947445b9a8e945bf}\label{class_game_ab0d2d5773b6d311b947445b9a8e945bf}} 
+\index{Game@{Game}!objectCollision@{objectCollision}}
+\index{objectCollision@{objectCollision}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{objectCollision()}{objectCollision()}}
+{\footnotesize\ttfamily void Game\+::object\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} $\ast$}]{ptr }\end{DoxyParamCaption})}
+
+This function checks for collisions of the \mbox{\hyperlink{class_player}{Player}} with the respective objects -\/ either health incremnet or score supplement. 
+\begin{DoxyParams}{Parameters}
+{\em Player$\ast$,this} & is the \mbox{\hyperlink{class_player}{Player}} object\textquotesingle{}s pointer. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_a27a229e80d6e5558dcbba97b09146901}\label{class_game_a27a229e80d6e5558dcbba97b09146901}} 
+\index{Game@{Game}!playerAttack@{playerAttack}}
+\index{playerAttack@{playerAttack}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{playerAttack()}{playerAttack()}}
+{\footnotesize\ttfamily void Game\+::player\+Attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} $\ast$}]{ptr,  }\item[{S\+D\+L\+\_\+\+Renderer\+Flip}]{flip,  }\item[{char}]{ch,  }\item[{S\+D\+L\+\_\+\+Rect}]{bg\+S\+RC,  }\item[{bool}]{flag3 }\end{DoxyParamCaption})}
+
+This function calls the attack function of the \mbox{\hyperlink{class_player}{Player}} and decreases the health of the \mbox{\hyperlink{class_enemy}{Enemy}} provided there is a collision. 
+\begin{DoxyParams}{Parameters}
+{\em Player$\ast$,this} & is the \mbox{\hyperlink{class_player}{Player}} object\textquotesingle{}s pointer. \\
+\hline
+{\em flip} & provides the orientation of the \mbox{\hyperlink{class_player}{Player}} which is of type S\+D\+L\+\_\+\+Renderer\+Flip. \\
+\hline
+{\em ch} & is a character that provides the attack performed by the \mbox{\hyperlink{class_player}{Player}}. \\
+\hline
+{\em bg\+S\+RC} & provides S\+D\+L\+\_\+\+Rect src rectangle for the background -\/ this is to generate the scene when dealing with the attack animation. \\
+\hline
+{\em flag3} & is a boolean that is toggled true when the \mbox{\hyperlink{class_player}{Player}} is pressing the move key down. This is related to \mbox{\hyperlink{class_obstacles}{Obstacles}} movement. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_a6a76c4c17d1081c1c7e34f05380016a7}\label{class_game_a6a76c4c17d1081c1c7e34f05380016a7}} 
+\index{Game@{Game}!readBGFromFile@{readBGFromFile}}
+\index{readBGFromFile@{readBGFromFile}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{readBGFromFile()}{readBGFromFile()}}
+{\footnotesize\ttfamily void Game\+::read\+B\+G\+From\+File (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Rect \&}]{r,  }\item[{int \&}]{points }\end{DoxyParamCaption})}
+
+
+
+loads from file upon the load game button press 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Rect} & \&bg\+S\+RC this is the background mover that makes it scrollable. It needs to be reset, or read from file.\+r This is the S\+DL Rectangle that \\
+\hline
+{\em int} & \&points This is the variable holding the amount of points a player has, and when loading, it needs to be set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_a1ab78f5ed0d5ea879157357cf2fb2afa}\label{class_game_a1ab78f5ed0d5ea879157357cf2fb2afa}} 
+\index{Game@{Game}!run@{run}}
+\index{run@{run}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Game\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This functions houses a while loop wherein the game continously runs until the quit condition is not met. ~\newline
+ \mbox{\Hypertarget{class_game_a7c87a861876e63017a9aa720bc775156}\label{class_game_a7c87a861876e63017a9aa720bc775156}} 
+\index{Game@{Game}!status@{status}}
+\index{status@{status}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{status()}{status()}}
+{\footnotesize\ttfamily void Game\+::status (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{g\+Renderer,  }\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{assets }\end{DoxyParamCaption})}
+
+This function is to relagate the fucntionality of the game bar at the top of the screen -\/ the health and point meter. 
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Renderer$\ast$} & to render the apple and lamp sprites. \\
+\hline
+{\em S\+D\+L\+\_\+\+Texture$\ast$} & for the passing of the appropiate spritesheet. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/akeel/\+One\+Drive/\+Desktop/finalfinalfinalfinalfinal/game.\+hpp\item 
+C\+:/\+Users/akeel/\+One\+Drive/\+Desktop/finalfinalfinalfinalfinal/game.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,128 @@
+\hypertarget{class_lamp}{}\doxysection{Lamp Class Reference}
+\label{class_lamp}\index{Lamp@{Lamp}}
+
+
+This class inherits from the Obstalces class. It is one of the two static objects which interact with the \mbox{\hyperlink{class_player}{Player}}. The specific function of this object is related to the points of the \mbox{\hyperlink{class_player}{Player}}.  
+
+
+
+
+{\ttfamily \#include $<$lamp.\+hpp$>$}
+
+Inheritance diagram for Lamp\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_lamp}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lamp_ad276ab5cc97116f9012bea05dea45e22}{Lamp}} (S\+D\+L\+\_\+\+Texture $\ast$asst)
+\item 
+void \mbox{\hyperlink{class_lamp_a22f396a88374ef2360a99674da43dfe4}{draw}} (S\+D\+L\+\_\+\+Renderer $\ast$g\+Renderer)
+\item 
+void \mbox{\hyperlink{class_lamp_a12ca33180491f98d5eda521625be7452}{move}} (S\+D\+L\+\_\+\+Renderer\+Flip flip, bool flag3)
+\item 
+char \mbox{\hyperlink{class_lamp_a3268ceb756b21dc334b184b422029daf}{name}} ()
+\item 
+void \mbox{\hyperlink{class_lamp_a70114ba808f0177b7a0cf355a4900eb4}{set\+Move}} (int x)
+\item 
+void \mbox{\hyperlink{class_lamp_ab7b37baca500df231bb740a059227991}{create\+Out\+File}} (std\+::ostream \&myfile)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class inherits from the Obstalces class. It is one of the two static objects which interact with the \mbox{\hyperlink{class_player}{Player}}. The specific function of this object is related to the points of the \mbox{\hyperlink{class_player}{Player}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_lamp_ad276ab5cc97116f9012bea05dea45e22}\label{class_lamp_ad276ab5cc97116f9012bea05dea45e22}} 
+\index{Lamp@{Lamp}!Lamp@{Lamp}}
+\index{Lamp@{Lamp}!Lamp@{Lamp}}
+\doxysubsubsection{\texorpdfstring{Lamp()}{Lamp()}}
+{\footnotesize\ttfamily Lamp\+::\+Lamp (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{asst }\end{DoxyParamCaption})}
+
+This is the constructor for the \mbox{\hyperlink{class_lamp}{Lamp}} class. 
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Texture$\ast$} & which is basically the asset file passed from the game.\+cpp. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lamp_ab7b37baca500df231bb740a059227991}\label{class_lamp_ab7b37baca500df231bb740a059227991}} 
+\index{Lamp@{Lamp}!createOutFile@{createOutFile}}
+\index{createOutFile@{createOutFile}!Lamp@{Lamp}}
+\doxysubsubsection{\texorpdfstring{createOutFile()}{createOutFile()}}
+{\footnotesize\ttfamily void Lamp\+::create\+Out\+File (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{myfile }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This functions writes the type, integer health value and integer x-\/coordinate to our save file. 
+\begin{DoxyParams}{Parameters}
+{\em myfile} & is the ostream object passed by reference from game.\+cpp when creating the save file. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_obstacles_a2c94b68a02fe45083d7d5f658bad165c}{Obstacles}}.
+
+\mbox{\Hypertarget{class_lamp_a22f396a88374ef2360a99674da43dfe4}\label{class_lamp_a22f396a88374ef2360a99674da43dfe4}} 
+\index{Lamp@{Lamp}!draw@{draw}}
+\index{draw@{draw}!Lamp@{Lamp}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Lamp\+::draw (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{g\+Renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This draw function renders the \mbox{\hyperlink{class_lamp}{Lamp}} object on the screen. 
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Renderer$\ast$} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_obstacles_af65a283f290979775db608b971970481}{Obstacles}}.
+
+\mbox{\Hypertarget{class_lamp_a12ca33180491f98d5eda521625be7452}\label{class_lamp_a12ca33180491f98d5eda521625be7452}} 
+\index{Lamp@{Lamp}!move@{move}}
+\index{move@{move}!Lamp@{Lamp}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Lamp\+::move (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer\+Flip}]{flip,  }\item[{bool}]{flag3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function moves the \mbox{\hyperlink{class_lamp}{Lamp}} object onto the screen when appropiate. When the \mbox{\hyperlink{class_player}{Player}} is moving to the right the \mbox{\hyperlink{class_lamp}{Lamp}} is reducing the x value. When player is moving to the left, we are increasing the x value. 
+\begin{DoxyParams}{Parameters}
+{\em flip} & provides the class with the orientation of the player which is of type S\+D\+L\+\_\+\+Renderer\+Flip.. \\
+\hline
+{\em flag3} & is a boolean that is toggled true when \mbox{\hyperlink{class_player}{Player}} is pressing the key down. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_obstacles_a944dbe10d9fe3061bb66e29455dfc01b}{Obstacles}}.
+
+\mbox{\Hypertarget{class_lamp_a3268ceb756b21dc334b184b422029daf}\label{class_lamp_a3268ceb756b21dc334b184b422029daf}} 
+\index{Lamp@{Lamp}!name@{name}}
+\index{name@{name}!Lamp@{Lamp}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily char Lamp\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function provides us with the specific type of Obstacle. In this case an \mbox{\hyperlink{class_lamp}{Lamp}}. 
+
+Reimplemented from \mbox{\hyperlink{class_obstacles_ae0107937f92255fd3113ac2d645a7a54}{Obstacles}}.
+
+\mbox{\Hypertarget{class_lamp_a70114ba808f0177b7a0cf355a4900eb4}\label{class_lamp_a70114ba808f0177b7a0cf355a4900eb4}} 
+\index{Lamp@{Lamp}!setMove@{setMove}}
+\index{setMove@{setMove}!Lamp@{Lamp}}
+\doxysubsubsection{\texorpdfstring{setMove()}{setMove()}}
+{\footnotesize\ttfamily void Lamp\+::set\+Move (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function sets the integer x cooridinate of the \mbox{\hyperlink{class_lamp}{Lamp}} when loading from save file. 
+
+Reimplemented from \mbox{\hyperlink{class_obstacles_a58a96d81c80911491b2033cd96a1fc0f}{Obstacles}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/akeel/\+One\+Drive/\+Desktop/finalfinalfinalfinalfinal/lamp.\+hpp\item 
+C\+:/\+Users/akeel/\+One\+Drive/\+Desktop/finalfinalfinalfinalfinal/lamp.\+cpp\end{DoxyCompactItemize}

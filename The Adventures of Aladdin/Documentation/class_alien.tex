@@ -1,0 +1,172 @@
+\hypertarget{class_alien}{}\doxysection{Alien Class Reference}
+\label{class_alien}\index{Alien@{Alien}}
+
+
+This class inherits from the \mbox{\hyperlink{class_enemy}{Enemy}} class. It is one of the three antagonists of the game. Move\+Count is the integer animation count tied to the movemnet of the \mbox{\hyperlink{class_alien}{Alien}}. Attack\+Count is the integer animation count tied to the attack sequence of the \mbox{\hyperlink{class_alien}{Alien}}. hurt\+Count is the integer animation count tied to the sequence when the \mbox{\hyperlink{class_alien}{Alien}} is defeated. ~\newline
+  
+
+
+
+
+{\ttfamily \#include $<$alien.\+hpp$>$}
+
+Inheritance diagram for Alien\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_alien}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_alien_a9bec4e9bab67ed8e445d7444551e7966}{Alien}} (S\+D\+L\+\_\+\+Texture $\ast$asst)
+\item 
+void \mbox{\hyperlink{class_alien_a42588c58cd52ee58b0954020b4d76af8}{draw}} (S\+D\+L\+\_\+\+Renderer $\ast$g\+Renderer)
+\item 
+void \mbox{\hyperlink{class_alien_abc6ee55321578147b5620a7de7cc8dca}{emove}} (bool \mbox{\hyperlink{class_alien_a3074eda882a0c10d9433b52f22643e65}{move}}, bool flag2)
+\item 
+void \mbox{\hyperlink{class_alien_a3074eda882a0c10d9433b52f22643e65}{move}} (int mx, bool flag, bool flag2, S\+D\+L\+\_\+\+Renderer\+Flip flip)
+\item 
+void \mbox{\hyperlink{class_alien_a404ed0bfa365994f1bbecc47a5ca5f3c}{attack}} ()
+\item 
+void \mbox{\hyperlink{class_alien_a0117f88cf508a9ef49432d959e1e384b}{hurt}} ()
+\item 
+char \mbox{\hyperlink{class_alien_a631aae83ada54aff551d44c3b9c1cd13}{get\+Type}} ()
+\item 
+void \mbox{\hyperlink{class_alien_af7d0f515f89a02ed9bf5df351f9af5c3}{set\+Healthn\+Mover}} (int helth, int xmov)
+\item 
+void \mbox{\hyperlink{class_alien_a2796bbec8cc41dc6f6b9b620dfbc546e}{create\+Out\+File}} (std\+::ostream \&myfile)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class inherits from the \mbox{\hyperlink{class_enemy}{Enemy}} class. It is one of the three antagonists of the game. Move\+Count is the integer animation count tied to the movemnet of the \mbox{\hyperlink{class_alien}{Alien}}. Attack\+Count is the integer animation count tied to the attack sequence of the \mbox{\hyperlink{class_alien}{Alien}}. hurt\+Count is the integer animation count tied to the sequence when the \mbox{\hyperlink{class_alien}{Alien}} is defeated. ~\newline
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_alien_a9bec4e9bab67ed8e445d7444551e7966}\label{class_alien_a9bec4e9bab67ed8e445d7444551e7966}} 
+\index{Alien@{Alien}!Alien@{Alien}}
+\index{Alien@{Alien}!Alien@{Alien}}
+\doxysubsubsection{\texorpdfstring{Alien()}{Alien()}}
+{\footnotesize\ttfamily Alien\+::\+Alien (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{asst }\end{DoxyParamCaption})}
+
+This is the constructor for the \mbox{\hyperlink{class_alien}{Alien}} class. 
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Texture$\ast$} & which is basically the asset file passed from the game.\+cpp. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_alien_a404ed0bfa365994f1bbecc47a5ca5f3c}\label{class_alien_a404ed0bfa365994f1bbecc47a5ca5f3c}} 
+\index{Alien@{Alien}!attack@{attack}}
+\index{attack@{attack}!Alien@{Alien}}
+\doxysubsubsection{\texorpdfstring{attack()}{attack()}}
+{\footnotesize\ttfamily void Alien\+::attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function cycles through the attack animation of the \mbox{\hyperlink{class_alien}{Alien}}. Cycling is done through Attack\+Count. \mbox{\Hypertarget{class_alien_a2796bbec8cc41dc6f6b9b620dfbc546e}\label{class_alien_a2796bbec8cc41dc6f6b9b620dfbc546e}} 
+\index{Alien@{Alien}!createOutFile@{createOutFile}}
+\index{createOutFile@{createOutFile}!Alien@{Alien}}
+\doxysubsubsection{\texorpdfstring{createOutFile()}{createOutFile()}}
+{\footnotesize\ttfamily void Alien\+::create\+Out\+File (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{myfile }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This functions writes the type, health value and x-\/coordinate to our save file. 
+\begin{DoxyParams}{Parameters}
+{\em myfile} & is the ostream object passed by reference from game.\+cpp when creating the save file. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_enemy_a636a62d58910fec939db2b5a8ba5fe91}{Enemy}}.
+
+\mbox{\Hypertarget{class_alien_a42588c58cd52ee58b0954020b4d76af8}\label{class_alien_a42588c58cd52ee58b0954020b4d76af8}} 
+\index{Alien@{Alien}!draw@{draw}}
+\index{draw@{draw}!Alien@{Alien}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Alien\+::draw (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{g\+Renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This draw function renders the \mbox{\hyperlink{class_alien}{Alien}} object on the screen. 
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Renderer$\ast$} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_enemy_a98469b76c2b06a03d0fe55c09269782e}{Enemy}}.
+
+\mbox{\Hypertarget{class_alien_abc6ee55321578147b5620a7de7cc8dca}\label{class_alien_abc6ee55321578147b5620a7de7cc8dca}} 
+\index{Alien@{Alien}!emove@{emove}}
+\index{emove@{emove}!Alien@{Alien}}
+\doxysubsubsection{\texorpdfstring{emove()}{emove()}}
+{\footnotesize\ttfamily void Alien\+::emove (\begin{DoxyParamCaption}\item[{bool}]{move,  }\item[{bool}]{flag2 }\end{DoxyParamCaption})}
+
+This function cycles through the move animation of the \mbox{\hyperlink{class_alien}{Alien}}. 
+\begin{DoxyParams}{Parameters}
+{\em move} & this is a boolean flag which toggles the x direction movement of the object on the screen. \textbackslash{}parm flag2 is a boolean flag which toggles whether or not the animation must play or not. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_alien_a631aae83ada54aff551d44c3b9c1cd13}\label{class_alien_a631aae83ada54aff551d44c3b9c1cd13}} 
+\index{Alien@{Alien}!getType@{getType}}
+\index{getType@{getType}!Alien@{Alien}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily char Alien\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function returns the type of \mbox{\hyperlink{class_enemy}{Enemy}} that it is. In this case a \mbox{\hyperlink{class_alien}{Alien}} ~\newline
+ 
+
+Reimplemented from \mbox{\hyperlink{class_enemy_a92ed7aaacdf46ecf1ece910ebce1567b}{Enemy}}.
+
+\mbox{\Hypertarget{class_alien_a0117f88cf508a9ef49432d959e1e384b}\label{class_alien_a0117f88cf508a9ef49432d959e1e384b}} 
+\index{Alien@{Alien}!hurt@{hurt}}
+\index{hurt@{hurt}!Alien@{Alien}}
+\doxysubsubsection{\texorpdfstring{hurt()}{hurt()}}
+{\footnotesize\ttfamily void Alien\+::hurt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function cycles through the death animation of the \mbox{\hyperlink{class_alien}{Alien}}. Cycling is done through hurt\+Count. 
+
+Reimplemented from \mbox{\hyperlink{class_enemy_a90d864122b0a26163400a11ed36363ed}{Enemy}}.
+
+\mbox{\Hypertarget{class_alien_a3074eda882a0c10d9433b52f22643e65}\label{class_alien_a3074eda882a0c10d9433b52f22643e65}} 
+\index{Alien@{Alien}!move@{move}}
+\index{move@{move}!Alien@{Alien}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Alien\+::move (\begin{DoxyParamCaption}\item[{int}]{mx,  }\item[{bool}]{flag,  }\item[{bool}]{flag2,  }\item[{S\+D\+L\+\_\+\+Renderer\+Flip}]{flip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function determines the static or movable nature of the \mbox{\hyperlink{class_alien}{Alien}} object and thus appropiately plays the respective move animation called through emove. 
+\begin{DoxyParams}{Parameters}
+{\em mx} & this is the integer x value of the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s mover so as to determine the distance between the \mbox{\hyperlink{class_alien}{Alien}} and \mbox{\hyperlink{class_player}{Player}} and thus force \mbox{\hyperlink{class_alien}{Alien}} movement towards the left. \\
+\hline
+{\em flag} & boolean value which is set true when this enemy is created. \\
+\hline
+{\em flag2} & variable that toggles true when left arrow key is down and false when it is up. \\
+\hline
+{\em flip} & denotes the orientation of the \mbox{\hyperlink{class_player}{Player}}. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_enemy_ae97862e90779f5652675f3ecbbcd9d0c}{Enemy}}.
+
+\mbox{\Hypertarget{class_alien_af7d0f515f89a02ed9bf5df351f9af5c3}\label{class_alien_af7d0f515f89a02ed9bf5df351f9af5c3}} 
+\index{Alien@{Alien}!setHealthnMover@{setHealthnMover}}
+\index{setHealthnMover@{setHealthnMover}!Alien@{Alien}}
+\doxysubsubsection{\texorpdfstring{setHealthnMover()}{setHealthnMover()}}
+{\footnotesize\ttfamily void Alien\+::set\+Healthn\+Mover (\begin{DoxyParamCaption}\item[{int}]{helth,  }\item[{int}]{xmov }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function sets the \mbox{\hyperlink{class_alien}{Alien}}\textquotesingle{}s health and position when loading the game from the save file. \textbackslash{}parm helth is the passed health integer value read from the save file. 
+\begin{DoxyParams}{Parameters}
+{\em xmov} & is the passed integer x-\/coordinate read from the save file. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_enemy_a2589276898573c32f6ba320949620fa5}{Enemy}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/akeel/\+One\+Drive/\+Desktop/finalfinalfinalfinalfinal/alien.\+hpp\item 
+C\+:/\+Users/akeel/\+One\+Drive/\+Desktop/finalfinalfinalfinalfinal/alien.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,60 @@
+\hypertarget{class_factory_enemy}{}\doxysection{Factory\+Enemy Class Reference}
+\label{class_factory_enemy}\index{FactoryEnemy@{FactoryEnemy}}
+
+
+This class implements the Factory design pattern and returns a pointer of \mbox{\hyperlink{class_enemy}{Enemy}} object depending upon the type passed in the constructor of this class.  
+
+
+
+
+{\ttfamily \#include $<$factory\+Enemy.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_factory_enemy_abe47cdac3ddf9a67fec23d6257379fda}{Factory\+Enemy}} (int type, S\+D\+L\+\_\+\+Texture $\ast$asst)
+\item 
+\mbox{\hyperlink{class_factory_enemy_a252d59af5206d07f70a61b861aa33164}{$\sim$\+Factory\+Enemy}} ()
+\item 
+\mbox{\hyperlink{class_enemy}{Enemy}} $\ast$ \mbox{\hyperlink{class_factory_enemy_a50afa4a5d3d607e492a5996636669602}{get\+Enemy}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class implements the Factory design pattern and returns a pointer of \mbox{\hyperlink{class_enemy}{Enemy}} object depending upon the type passed in the constructor of this class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_factory_enemy_abe47cdac3ddf9a67fec23d6257379fda}\label{class_factory_enemy_abe47cdac3ddf9a67fec23d6257379fda}} 
+\index{FactoryEnemy@{FactoryEnemy}!FactoryEnemy@{FactoryEnemy}}
+\index{FactoryEnemy@{FactoryEnemy}!FactoryEnemy@{FactoryEnemy}}
+\doxysubsubsection{\texorpdfstring{FactoryEnemy()}{FactoryEnemy()}}
+{\footnotesize\ttfamily Factory\+Enemy\+::\+Factory\+Enemy (\begin{DoxyParamCaption}\item[{int}]{type,  }\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{asst }\end{DoxyParamCaption})}
+
+This constructor creates the \mbox{\hyperlink{class_enemy}{Enemy}} object depending upon the type. 
+\begin{DoxyParams}{Parameters}
+{\em type} & is an integer variable to determine which \mbox{\hyperlink{class_enemy}{Enemy}} object is to be produced. \\
+\hline
+{\em S\+D\+L\+\_\+\+Texture$\ast$} & is the asset sheet passed from game.\+cpp. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_factory_enemy_a252d59af5206d07f70a61b861aa33164}\label{class_factory_enemy_a252d59af5206d07f70a61b861aa33164}} 
+\index{FactoryEnemy@{FactoryEnemy}!````~FactoryEnemy@{$\sim$FactoryEnemy}}
+\index{````~FactoryEnemy@{$\sim$FactoryEnemy}!FactoryEnemy@{FactoryEnemy}}
+\doxysubsubsection{\texorpdfstring{$\sim$FactoryEnemy()}{~FactoryEnemy()}}
+{\footnotesize\ttfamily Factory\+Enemy\+::$\sim$\+Factory\+Enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This destructor is clearing the dynamically allocated memory for the objects. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_factory_enemy_a50afa4a5d3d607e492a5996636669602}\label{class_factory_enemy_a50afa4a5d3d607e492a5996636669602}} 
+\index{FactoryEnemy@{FactoryEnemy}!getEnemy@{getEnemy}}
+\index{getEnemy@{getEnemy}!FactoryEnemy@{FactoryEnemy}}
+\doxysubsubsection{\texorpdfstring{getEnemy()}{getEnemy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_enemy}{Enemy}} $\ast$ Factory\+Enemy\+::get\+Enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function is just returning the pointer to the \mbox{\hyperlink{class_enemy}{Enemy}} object once it is created. Return type is Enemy$\ast$. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/akeel/\+One\+Drive/\+Desktop/finalfinalfinalfinalfinal/factory\+Enemy.\+hpp\item 
+C\+:/\+Users/akeel/\+One\+Drive/\+Desktop/finalfinalfinalfinalfinal/factory\+Enemy.\+cpp\end{DoxyCompactItemize}

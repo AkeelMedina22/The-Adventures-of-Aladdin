@@ -1,0 +1,60 @@
+\hypertarget{class_factory_obstacles}{}\doxysection{Factory\+Obstacles Class Reference}
+\label{class_factory_obstacles}\index{FactoryObstacles@{FactoryObstacles}}
+
+
+This class implements the Factory design pattern and returns a pointer of \mbox{\hyperlink{class_obstacles}{Obstacles}} object depending upon the type passed in the constructor of this class.  
+
+
+
+
+{\ttfamily \#include $<$factory\+Obstacles.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_factory_obstacles_a0b1005238a3557c7adab835cf0f11059}{Factory\+Obstacles}} (int type, S\+D\+L\+\_\+\+Texture $\ast$asst)
+\item 
+\mbox{\hyperlink{class_factory_obstacles_ad263430da5e18e5b105cd27143991b41}{$\sim$\+Factory\+Obstacles}} ()
+\item 
+\mbox{\hyperlink{class_obstacles}{Obstacles}} $\ast$ \mbox{\hyperlink{class_factory_obstacles_acb6f6c46439f851bd11683ddcec6605e}{get\+Obstacles}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class implements the Factory design pattern and returns a pointer of \mbox{\hyperlink{class_obstacles}{Obstacles}} object depending upon the type passed in the constructor of this class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_factory_obstacles_a0b1005238a3557c7adab835cf0f11059}\label{class_factory_obstacles_a0b1005238a3557c7adab835cf0f11059}} 
+\index{FactoryObstacles@{FactoryObstacles}!FactoryObstacles@{FactoryObstacles}}
+\index{FactoryObstacles@{FactoryObstacles}!FactoryObstacles@{FactoryObstacles}}
+\doxysubsubsection{\texorpdfstring{FactoryObstacles()}{FactoryObstacles()}}
+{\footnotesize\ttfamily Factory\+Obstacles\+::\+Factory\+Obstacles (\begin{DoxyParamCaption}\item[{int}]{type,  }\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{asst }\end{DoxyParamCaption})}
+
+This constructor creates the \mbox{\hyperlink{class_obstacles}{Obstacles}} object depending upon the type. 
+\begin{DoxyParams}{Parameters}
+{\em type} & is an integer variable to determine which \mbox{\hyperlink{class_obstacles}{Obstacles}} object is to be produced. \\
+\hline
+{\em S\+D\+L\+\_\+\+Texture$\ast$} & is the asset sheet passed from game.\+cpp. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_factory_obstacles_ad263430da5e18e5b105cd27143991b41}\label{class_factory_obstacles_ad263430da5e18e5b105cd27143991b41}} 
+\index{FactoryObstacles@{FactoryObstacles}!````~FactoryObstacles@{$\sim$FactoryObstacles}}
+\index{````~FactoryObstacles@{$\sim$FactoryObstacles}!FactoryObstacles@{FactoryObstacles}}
+\doxysubsubsection{\texorpdfstring{$\sim$FactoryObstacles()}{~FactoryObstacles()}}
+{\footnotesize\ttfamily Factory\+Obstacles\+::$\sim$\+Factory\+Obstacles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This destructor is clearing the dynamically allocated memory for the objects. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_factory_obstacles_acb6f6c46439f851bd11683ddcec6605e}\label{class_factory_obstacles_acb6f6c46439f851bd11683ddcec6605e}} 
+\index{FactoryObstacles@{FactoryObstacles}!getObstacles@{getObstacles}}
+\index{getObstacles@{getObstacles}!FactoryObstacles@{FactoryObstacles}}
+\doxysubsubsection{\texorpdfstring{getObstacles()}{getObstacles()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obstacles}{Obstacles}} $\ast$ Factory\+Obstacles\+::get\+Obstacles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function is just returning the pointer to the \mbox{\hyperlink{class_obstacles}{Obstacles}} object once it is created. Return type is Obstacles$\ast$. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/akeel/\+One\+Drive/\+Desktop/finalfinalfinalfinalfinal/factory\+Obstacles.\+hpp\item 
+C\+:/\+Users/akeel/\+One\+Drive/\+Desktop/finalfinalfinalfinalfinal/factory\+Obstacles.\+cpp\end{DoxyCompactItemize}
